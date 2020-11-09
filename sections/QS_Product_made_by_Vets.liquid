@@ -1,0 +1,232 @@
+<div class="bg-cover">
+<div class="page-width">
+	<div class="row">
+		<div class="col-md-6 bg-approved">
+      	</div>
+    	<div class="col-md-6">
+      	<div class="row">
+        	<div class="col-md-12">
+              <h3 class="bold">{{ product.metafields["global"]["Section-2-Heading"] }}</h3>
+        	</div>
+        	<div class="col-md-12 QS_div_desc">
+          		<h4 class="sec_desc">{{ product.metafields["global"]["Section-2-Description"] }}</h4>
+        	</div>
+        
+        	<div class="col-md-12" style="background:#e1e9d0;">
+            	<div class="row" style="padding: 38px 32px 38px 32px;">
+              		<div class="col-12">
+                      	<div class="row" style="margin-bottom: 15px;">
+                        	<div class="col-1"> 
+                          		<img class="check-mark" src="https://cdn.shopify.com/s/files/1/0346/0438/4395/files/check-icon.png?v=1588755008" />
+                          	</div>
+                          	<div class="col-11">
+              					{{ product.metafields["global"]["Section-2-Features1"] }}
+                            </div>
+                      	</div>
+                      	<div class="row" style="margin-bottom: 15px;">
+                        	<div class="col-1"> 
+                          		<img class="check-mark" src="https://cdn.shopify.com/s/files/1/0346/0438/4395/files/check-icon.png?v=1588755008" />
+                          	</div>
+                          	<div class="col-11">
+              					{{ product.metafields["global"]["Section-2-Features2"] }}
+                            </div>
+                      	</div>
+                      	<div class="row">
+                        	<div class="col-1"> 
+                          		<img class="check-mark" src="https://cdn.shopify.com/s/files/1/0346/0438/4395/files/check-icon.png?v=1588755008" />
+                          	</div>
+                          	<div class="col-11">
+              					{{ product.metafields["global"]["Section-2-Features3"] }}
+                            </div>
+                      	</div>
+             		</div>
+          		</div>
+      		</div>
+    	</div>
+    	</div>
+    </div>
+</div>
+</div>
+      
+      <style>
+        .bg-cover {
+        	background-image:url({{ product.metafields["global"]["Section-2-Background-image"] }});
+          	background-position: left center;
+    		background-size: contain;
+    		background-repeat: no-repeat;
+        }
+        .bg-approved {
+        	background-repeat: no-repeat;
+            background-size: contain;
+          	background-position: center;
+        }
+        #shopify-section-QS_Product_made_by_Vets {
+        	background-color: #f0f4f9;
+          	padding-top: 80px;
+    		padding-bottom: 50px;
+        }
+        .sec_desc {
+    		color: #747474;
+		}
+         
+        .check-mark {
+        	width: 17px;
+          	max-width: 17px;
+        }
+        .QS_div_desc {
+           padding-top: 10px;
+           padding-bottom: 30px;  
+        }
+        .QS_tick
+        {
+          width:20px;
+        }
+        
+        .QS_li
+        {
+          color: #384c14;
+          font-size:16px;
+          padding-bottom: 20px;
+        }
+        .QS_li img
+        {
+              width: 19px;
+        }
+        .sec_text_center
+        {
+         text-align:center;
+        }
+        .div_padding_top
+        {
+         padding-top:60px; 
+        }
+        .div_img_container
+        {
+            height: 140px;
+    		width: 235px;
+    		background-repeat: no-repeat;
+    		/* border-bottom: 105px; */
+    		border-radius: 10px;
+        }
+        @media (max-width: 1084px) {
+          .div_img_container { 
+          	width: 100%;
+          }
+        }
+        .QS_love_img_div
+        {
+			text-align: center;
+    		margin: auto;
+          	border-bottom-left-radius: 12px;
+    		border-bottom-right-radius: 12px;
+          	border-top-left-radius: 12px;
+    		border-top-right-radius: 12px;
+    		width: 236px;
+    		box-shadow: 5px 8px 15px 5px #c3baba42;
+          	margin-bottom: 20px;
+        }
+        @media (max-width: 1084px) {
+        	.QS_love_img_div {
+            	width: 100%;
+            }
+        }
+          .QS_love_head
+        {
+         	padding:18px; 
+          font-size:15px;
+          font-weight:600;
+        }
+        .QS_Love_parent_div
+        {
+          padding:50px 0;
+        }
+        .QS_num
+        {
+          	width: 47px;
+    		font-size: 38px;
+    		font-weight: 600;
+          	//border-bottom: solid 1px #2832af;
+   			//padding-bottom: 11px;
+        }
+      
+
+.QS_sec_line {
+    width: 49px;
+    border-bottom: solid 1px #2832af;
+    padding: -44px;
+    height: -4px;
+    padding-bottom: -3px;
+    margin-bottom: auto;
+    margin-top: 12px;
+}
+       .QS_sec_head
+        {
+         display:flex; 
+        }
+       
+        .QS_sec_text {
+    		padding-left: 15px;
+   			font-weight: 800;
+          text-align:left;
+		}
+        .QS_Sec_parent_div
+        {
+         background:#f7efeb; 
+        }
+        .Sec_desc
+        {
+          padding-top:20px;
+         text-align:left; 
+          font-size:15px;
+        }
+        .QS_Sec_parent_div
+        {
+         padding:50px 0; 
+        }
+  </style>
+  {% schema %}
+  {
+    "name": "Made By Vets Section",
+    "settings": [
+ {
+          "type": "image_picker",
+          "id": "image",
+          "label": {
+           
+            "en": "Banner Image"
+           
+          }
+        },
+    {
+          "type": "text",
+          "id": "heading",
+          "label": {
+                   "en": "Heading"
+              },
+          "default": {
+                   "en": "Made By Vets, Approved By Pets"
+              }
+        },
+		{
+          "type": "textarea",
+          "id": "description",
+          "label": {
+                   "en": "Description"
+              }
+          
+        },
+  		{
+          "type": "textarea",
+          "id": "features",
+          "label": {
+                   "en": "Features"
+              }
+          
+        }
+		
+ 		
+        
+
+]
+  }
+{% endschema %}

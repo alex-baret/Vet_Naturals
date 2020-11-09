@@ -1,0 +1,167 @@
+<div class="QS_Love_parent_div">
+  	
+  <div class="page-width">
+    <div class="row sec_text_center">
+	<div class="col-md-12">  
+      <h3 class="bold sec_text_center">{{ product.metafields["global"]["Section-3-Heading"] }}</h3></div>
+  </div>  
+      <div class="row sec_text_center">
+        <div class="col-md-12">
+            <h4 class="sec_desc"> 
+              {{ product.metafields["global"]["Section-3-Description"] }}
+          </h4>
+        </div>  
+  
+  		</div>  
+   <div class="row sec_text_center div_padding_top">
+     <div class="col-md-3 col-sm-6 col-12">
+       <div class="QS_love_img_div">
+         <div class="div_img_container" style="background-image:url({{ product.metafields["global"]["Section-3-Image1"] }}); background-size: cover;">
+         </div>
+         <div class="QS_love_head">{{ product.metafields["global"]["Section-3-Title1"] }}</div>
+         <div class="single_description">{{ product.metafields["global"]["Section-3-Desc1"] }}</div>
+       </div>
+     </div>
+      <div class="col-md-3 col-sm-6 col-12">
+        <div class="QS_love_img_div">
+          <div class="div_img_container" style="background-image:url({{ product.metafields["global"]["Section-3-Image2"] }}); background-size: cover;">
+        </div>
+        <div class="QS_love_head">{{ product.metafields["global"]["Section-3-Title2"] }}</div>
+        <div class="single_description">{{ product.metafields["global"]["Section-3-Desc2"] }}</div>
+        </div>
+     </div>
+      <div class="col-md-3 col-sm-6 col-12">
+        <div class="QS_love_img_div">
+          <div class="div_img_container" style="background-image:url({{ product.metafields["global"]["Section-3-Image3"] }}); background-size: cover;">
+        </div>
+        <div class="QS_love_head">{{ product.metafields["global"]["Section-3-Title3"] }} </div>
+         <div class="single_description">{{ product.metafields["global"]["Section-3-Desc3"] }}</div>
+
+        </div>
+     </div>
+      <div class="col-md-3 col-sm-6 col-12">
+        <div class="QS_love_img_div">
+          <div class="div_img_container" style="background-image:url({{ product.metafields["global"]["Section-3-Image4"] }}); background-size: cover;">
+        </div>
+        <div class="QS_love_head">{{ product.metafields["global"]["Section-3-Title4"] }}</div>
+        <div class="single_description">{{ product.metafields["global"]["Section-3-Desc4"] }}</div>
+
+        </div>
+     </div>
+   </div>    
+    
+</div>
+</div>
+{% schema %}
+  {
+    "name": "Reason to Love Section",
+    "settings": [
+ 	
+		{
+          "type": "text",
+          "id": "heading",
+          "label": {
+                   "en": "Heading"
+              },
+          "default": {
+                   "en": "Reason To Love Our Dog Supplements"
+              }
+        },
+		
+		{
+          "type": "textarea",
+          "id": "description",
+          "label": {
+                   "en": "Description"
+              },
+"default": {
+                   "en": "Our team invest time,money and resources to optimize dietary formulas"
+              }
+          
+        },
+		{
+          "type": "image_picker",
+          "id": "image1",
+          "label": {
+           
+            "en": "Image 1"
+           
+          }
+        },
+  
+		{
+          "type": "text",
+          "id": "heading1",
+          "label": {
+                   "en": "Title 1 "
+              },
+          "default": {
+                   "en": "Deliciously Flavoured"
+              }
+        },
+		
+{
+          "type": "image_picker",
+          "id": "image2",
+          "label": {
+           
+            "en": "Image 2"
+           
+          }
+        },
+  
+		{
+          "type": "text",
+          "id": "heading2",
+          "label": {
+                   "en": "Title 2"
+              },
+          "default": {
+                   "en": "Organic Ingredients"
+              }
+        },
+		{
+          "type": "image_picker",
+          "id": "image3",
+          "label": {
+           
+            "en": "Image 3"
+           
+          }
+        },
+  
+		{
+          "type": "text",
+          "id": "heading3",
+          "label": {
+                   "en": "Title 3"
+              },
+          "default": {
+                   "en": "For All Sizes"
+              }
+        },
+{
+          "type": "image_picker",
+          "id": "image4",
+          "label": {
+           
+            "en": "Image 4"
+           
+          }
+        },
+  
+		{
+          "type": "text",
+          "id": "heading4",
+          "label": {
+                   "en": "Title 4"
+              },
+          "default": {
+                   "en": "Anti Inflammatories"
+              }
+        }
+
+
+ 	]
+  }
+{% endschema %}

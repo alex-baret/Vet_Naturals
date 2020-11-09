@@ -1,0 +1,36 @@
+
+<style>
+  #growthhero_iframe {
+    width:100%;
+      height: 100vh;
+    border:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    z-index:999999;
+  }
+
+  #growthhero_iframe_wrapper {
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+
+  }
+
+  
+</style>
+
+<div id="growthhero_iframe_wrapper">
+
+<script type="text/javascript">
+  var path = ""
+
+  if (window.location.hash) {
+    path = window.location.hash.substr(1);
+  }
+
+  var iframeSrc = "https://app.growthhero.io/?embedded=true#/c/vetnaturals/" + path;
+  document.write('<iframe id="growthhero_iframe" src=' + iframeSrc + '>Your browser does not support iframes</iframe>');
+</script>
+
+</div>
+

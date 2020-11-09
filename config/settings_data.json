@@ -1,0 +1,880 @@
+{
+  "current": {
+    "color_text": "#3d3d3d",
+    "color_body_text": "#565656",
+    "color_sale_text": "#557b97",
+    "color_button": "#557b97",
+    "color_button_text": "#fff",
+    "color_small_button_text_border": "#3d4246",
+    "color_text_field_text": "#000",
+    "color_text_field_border": "#949494",
+    "color_text_field": "#fff",
+    "color_image_overlay_text": "#fff",
+    "color_image_overlay": "#3d4246",
+    "image_overlay_opacity": 40,
+    "color_borders": "#e8e9eb",
+    "color_body_bg": "#fff",
+    "type_header_font": "work_sans_n6",
+    "type_header_base_size": 26,
+    "type_base_font": "work_sans_n4",
+    "type_base_size": 18,
+    "predictive_search_enabled": true,
+    "predictive_search_show_vendor": false,
+    "predictive_search_show_price": false,
+    "share_image": "",
+    "share_facebook": true,
+    "share_twitter": true,
+    "share_pinterest": true,
+    "social_twitter_link": "",
+    "social_facebook_link": "",
+    "social_pinterest_link": "",
+    "social_instagram_link": "",
+    "social_tumblr_link": "",
+    "social_snapchat_link": "",
+    "social_youtube_link": "",
+    "social_vimeo_link": "",
+    "favicon": "shopify:\/\/shop_images\/favicon.png",
+    "enable_ajax": true,
+    "checkout_header_image": "",
+    "checkout_logo_image": "",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_accent_color": "#197bbd",
+    "checkout_button_color": "#197bbd",
+    "checkout_error_color": "#e32c2b",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "align_logo": "center",
+          "logo": "shopify:\/\/shop_images\/vet-logo.png",
+          "logo_max_width": 110,
+          "main_linklist": "main-menu",
+          "message": true,
+          "home_page_only": false,
+          "message_text": "Get Free Shipping + 15% Off Your Next Order! Click Here To Learn More",
+          "message_link": "shopify:\/\/pages\/become-an-ambassador",
+          "color_bg": "#3d62a1",
+          "color_text": "#ffffff"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "1586984712905": {
+            "type": "text",
+            "settings": {
+              "title": "Vet Naturals",
+              "text": "<p><a href=\"\/pages\/scholarship-program\" title=\"Scholarship Program\"><\/a><\/p>\n<p><a href=\"\/pages\/shipping-and-returns\" title=\"Shipping and Returns\">Shipping &amp; Returns<\/a><\/p>\n<p><a href=\"\/pages\/fda-disclaimer\" title=\"FDA Disclaimer\">FDA Disclaimer<\/a><\/p>\n<p><a href=\"\/pages\/terms-conditions\" title=\"Terms &amp; Conditions\">Terms &amp; Conditions<\/a><\/p>\n<p><a href=\"\/pages\/privacy-policy\" title=\"Privacy Policy\">Privacy Policy<\/a><\/p>"
+            }
+          },
+          "1586984772724": {
+            "type": "text",
+            "settings": {
+              "title": "Most Popular",
+              "text": "<p><a href=\"\/products\/hip-joint\" title=\"Hip &amp; Joint\">Hip &amp; Joint<\/a><\/p>\n<p><a href=\"\/products\/omega-chews\" title=\"Omega Chews\">Omega Chews<\/a><\/p>\n<p><a href=\"\/products\/immune-allergy-chews\" title=\"Immune &amp; Allergy Chews\">Immune &amp; Allergy Chews<\/a><\/p>\n<p><a href=\"\/products\/hemp-hips\" title=\"Hemp &amp; Hips\">Hemp &amp; Hips<\/a><\/p>"
+            }
+          },
+          "text": {
+            "type": "text",
+            "settings": {
+              "title": "Contact Us",
+              "text": "<p>Vet Naturals<\/p>\n<p>Service@VetNaturals.com<\/p>\n<p>Toll Free: (855) 417 8598<\/p>"
+            }
+          },
+          "1587491465925": {
+            "type": "newsletter",
+            "settings": {
+              "title": "Discounts & Updates"
+            }
+          }
+        },
+        "block_order": [
+          "1586984712905",
+          "1586984772724",
+          "text",
+          "1587491465925"
+        ],
+        "settings": {
+          "show_payment_icons": false,
+          "color_footer_bg": "#3d62a1",
+          "color_footer_text": "#ffffff",
+          "show_locale_selector": true,
+          "show_currency_selector": true
+        }
+      },
+      "1587418343695": {
+        "type": "custom-content",
+        "blocks": {
+          "1587418634497": {
+            "type": "html",
+            "settings": {
+              "code": "<div class=\"solutions-title-container\">\n<h2>Quickly Find The Purest Solution <span class=\"blue\">For Your Dog<\/span>\n<\/h2>\n<h4 class=\"grey\" style=\"max-width: 620px; margin-left: auto; margin-right: auto;\">Our formulas are based on thousands of years of honored healing traditions, combined with the best that modern science has to offer:<\/h4>\n<\/div>",
+              "width": "100%"
+            }
+          },
+          "1587420718791": {
+            "type": "html",
+            "settings": {
+              "code": "<div class=\"dog-solution-container\">\n<a href=\"https:\/\/vetnaturals.com\/collections\/all-products-minus-upsells-downsells\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/0438\/4395\/files\/dg1.png?v=1587420929\" class=\"dog-solution-img\">\n<p class=\"dog-solution-text\">Stress &amp; Energy Levels<\/p>\n<\/a>\n<\/div>",
+              "width": "33%"
+            }
+          },
+          "1587421760036": {
+            "type": "html",
+            "settings": {
+              "code": "<div class=\"dog-solution-container\">\n<a href=\"https:\/\/vetnaturals.com\/collections\/all-products-minus-upsells-downsells\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/0438\/4395\/files\/dg2.png?v=1587420929\" class=\"dog-solution-img\">\n<p class=\"dog-solution-text\">Immune System<\/p>\n<\/a>\n<\/div>",
+              "width": "33%"
+            }
+          },
+          "1587421771935": {
+            "type": "html",
+            "settings": {
+              "code": "<div class=\"dog-solution-container\">\n<a href=\"https:\/\/vetnaturals.com\/collections\/all-products-minus-upsells-downsells\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/0438\/4395\/files\/dg3.png?v=1587420929\" class=\"dog-solution-img\">\n<p class=\"dog-solution-text\">Sleep Aids<\/p>\n<\/a>\n<\/div>",
+              "width": "33%"
+            }
+          },
+          "1587422005958": {
+            "type": "html",
+            "settings": {
+              "code": "<div class=\"dog-solution-container\">\n<a href=\"https:\/\/vetnaturals.com\/collections\/all-products-minus-upsells-downsells\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/0438\/4395\/files\/dg4.png?v=1587420929\" class=\"dog-solution-img\">\n<p class=\"dog-solution-text\">Bone &amp; Joint Issues<\/p>\n<\/a>\n<\/div>",
+              "width": "33%"
+            }
+          },
+          "1587422015766": {
+            "type": "html",
+            "settings": {
+              "code": "<div class=\"dog-solution-container\">\n<a href=\"https:\/\/vetnaturals.com\/collections\/all-products-minus-upsells-downsells\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/0438\/4395\/files\/dg5.png?v=1587420929\" class=\"dog-solution-img\">\n<p class=\"dog-solution-text\">Revitalizing Fur<\/p>\n<\/a>\n<\/div>",
+              "width": "33%"
+            }
+          },
+          "1587422029721": {
+            "type": "html",
+            "settings": {
+              "code": "<div class=\"dog-solution-container\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/0438\/4395\/files\/dg6.png?v=1587420929\" class=\"dog-solution-img\">\n<p class=\"dog-solution-text\">Cardio &amp; Heart Support<\/p>\n<\/div>",
+              "width": "33%"
+            }
+          }
+        },
+        "block_order": [
+          "1587418634497",
+          "1587420718791",
+          "1587421760036",
+          "1587421771935",
+          "1587422005958",
+          "1587422015766",
+          "1587422029721"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "1587429737414": {
+        "type": "custom-content",
+        "blocks": {
+          "1587429798952": {
+            "type": "html",
+            "settings": {
+              "code": "<a class=\"white read-link\" href=\"https:\/\/blog.vetnaturals.com\">\n<div class=\"row blog-container\">\n<!-- Text -->\n<div class=\"white text-block-promo\">\n<h3><b>Vet Naturals Blog<\/b><\/h3>\n<h4>Looking for ways to elevate your senior dog’s life quality and way of enjoying it?<\/h4>\n<!-- Text END -->\n<!-- Link -->\n<span class=\"white read-link\" href=\"https:\/\/blog.vetnaturals.com\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/0438\/4395\/files\/arrow-right.png?v=1587431602\" width=\"10px\" height=\"auto\" style=\"margin-right: 5px;\">READ BLOG<\/span>\n<\/div>\n<!-- Link END -->\n<!-- Image -->\n<div class=\"image-block-promo\">\n<img class=\"dog-shot\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/0438\/4395\/files\/vet-blog.jpg?v=1587430416\">\n<\/div>\n<!-- Image END -->\n<\/div><\/a>",
+              "width": "50%"
+            }
+          },
+          "1587429805774": {
+            "type": "html",
+            "settings": {
+              "code": "<a class=\"white read-link\" href=\"https:\/\/vetnaturals.com\/collections\/all-products-minus-upsells-downsells\">\n<div class=\"row product-container\">\n<!-- Text -->\n<div class=\"white text-block-promo\">\n<h3><b>Our Products<\/b><\/h3>\n<h4>Looking for ways to elevate your senior dog’s life quality and way of enjoying it?<\/h4>\n<!-- Text END -->\n<!-- Link -->\n<span class=\"white read-link\" href=\"\/collections\/all-products\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/0438\/4395\/files\/arrow-right.png?v=1587431602\" width=\"10px\" height=\"auto\" style=\"margin-right: 5px;\">SEE PRODUCTS<\/span>\n<\/div>\n<!-- Link END -->\n<!-- Image -->\n<div class=\"image-block-promo\">\n<img class=\"product-shot\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/0438\/4395\/files\/product-img.png?v=1587435658\">\n<\/div>\n<!-- Image END -->\n<\/div>\n<\/a>",
+              "width": "50%"
+            }
+          },
+          "1587438329830": {
+            "type": "html",
+            "settings": {
+              "code": "<div class=\"center\">\n<button class=\"button-yellow\"><a href=\"https:\/\/vetnaturals.com\/collections\/all-products-minus-upsells-downsells\">View All Vet Naturals Products<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/0438\/4395\/files\/all-button-icon.png?v=1590437865\" class=\"button-yellow-next\"><\/a><\/button>\n<\/div>",
+              "width": "100%"
+            }
+          }
+        },
+        "block_order": [
+          "1587429798952",
+          "1587429805774",
+          "1587438329830"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "1587441955395": {
+        "type": "hero",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/dog-corner-left.jpg",
+          "alignment": "top",
+          "hero_layout": "full_width",
+          "hero_size": "medium",
+          "text_size": "medium",
+          "title": "",
+          "text": "",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "1587506794426": {
+        "type": "custom-content",
+        "blocks": {
+          "1587507187758": {
+            "type": "html",
+            "settings": {
+              "code": "",
+              "width": "50%"
+            }
+          },
+          "1587506859800": {
+            "type": "html",
+            "settings": {
+              "code": "<div class=\"row natural-container\">\n<!-- Opening Text -->\n<h2 class=\"blue center\" style=\"max-width: 527px;\">Pure, All-Natural Solutions, <span class=\"black\">To Keep Your Dog Healthy<\/span>\n<\/h2>\n<h4 class=\"center\" style=\"max-width: 527px;\">Vet Naturals® is committed to providing your loved pet with an effective selection of high quality, natural supplements.<\/h4>\n<!-- Opening Text END -->\n<!-- Testimonial -->\n<div class=\"center\" style=\"background-color: #f6efec; border-radius: 14px; margin-top: 80px; padding-left: 15px; padding-right: 15px; padding-bottom: 15px; width: 100%; max-width: 500px;\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/0438\/4395\/files\/testimonial-head-mel.png?v=1587507558\" width=\"100px\" style=\"margin-top: -50px; margin-bottom: 20px;\">\n<p class=\"center\" style=\"max-width: 420px;\"><i>“This has completely changed my 10 year old dog’s ability to go for long walks and hikes again. Thanks!”<\/i><\/p>\n<p style=\"color: #a86c2a;\">Melanie Rolston, Vet Naturals Customer<\/p>\n<\/div>\n<!-- Testimonial END -->\n<\/div>",
+              "width": "50%"
+            }
+          }
+        },
+        "block_order": [
+          "1587507187758",
+          "1587506859800"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "QS_ambassador_banner": {
+        "type": "QS_ambassador_banner",
+        "settings": {
+          "bannerimage": "shopify:\/\/shop_images\/1.png",
+          "tag": "APPLY TODAY AND REAP THE BENEFITS",
+          "heading": "Become A Vet Naturals Ambassador",
+          "subheading": "The place to come together and share in the love of Vet Naturals dog nutritional supplements with friends, family and most importantly their four-legged loved ones.",
+          "button_label": "Apply Now",
+          "button_link": "#shopify-section-QS_ambassador_belong"
+        }
+      },
+      "QS_ambassador_belong": {
+        "type": "QS_ambassador_belong",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/belong.png",
+          "heading": "You Belong Here",
+          "description": "<ul>\n                        <li>\n                          <span><i class=\"QS_app_tick fa fa-check-circle\" aria-hidden=\"true\"><\/i><\/span>\n                         <span class=\"tick_text\">Belong in a community that loves their pets.<\/span> <\/li>\n                        <li>\n                          <span><i class=\"QS_app_tick fa fa-check-circle\" aria-hidden=\"true\"><\/i><\/span>\n                          <span class=\"tick_text\">Acquire a <strong>unique coupon code<\/strong> to share with family and friends.\n                          <\/span>\n                        <\/li>\n                        <li>\n                          <span><i class=\"QS_app_tick fa fa-check-circle\" aria-hidden=\"true\"><\/i><\/span>\n                          <span class=\"tick_text\">Recognize the importance of giving pets <strong>premium suppliments full of vitamins<\/strong>\n                          <\/span>\n                          <\/li>\n                        <li>\n                          <span><i class=\"QS_app_tick fa fa-check-circle\" aria-hidden=\"true\"><\/i>\n                          <\/span>\n                          <span class=\"tick_text\">\n                            Keep up with <strong>upcoming deals and promotions<\/strong> by being the first to know via our news letter\n                          <\/span>\n                            <\/li>\n                        \n                        \n                      <\/ul>",
+          "button_label": "Apply Now",
+          "button_link": "https:\/\/app.growthhero.io\/#\/c\/vetnaturals\/registration\/ambassador"
+        }
+      },
+      "QS_ambassador_perks": {
+        "type": "QS_ambassador_perks",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/perks.png",
+          "heading": "Perks of Being an Ambassador",
+          "description": "<ul>\n                        <li>\n                          <span><i class=\"QS_app_tick fa fa-check-circle\" aria-hidden=\"true\"><\/i><\/span>\n                         <span class=\"tick_text\">Two free samples of your choice to try. (More information on this will come via email)<\/span> <\/li>\n                        <li>\n                          <span><i class=\"QS_app_tick fa fa-check-circle\" aria-hidden=\"true\"><\/i><\/span>\n                          <span class=\"tick_text\"> A lifetime 15% off Vetnaturals.com\n                          <\/span>\n                        <\/li>\n                        <li>\n                          <span><i class=\"QS_app_tick fa fa-check-circle\" aria-hidden=\"true\"><\/i><\/span>\n                          <span class=\"tick_text\">10% commission on any of our product that is purchased with your discount code (post discount)! <\/span>\n                          <\/li>\n                        <li>\n                          <span><i class=\"QS_app_tick fa fa-check-circle\" aria-hidden=\"true\"><\/i>\n                          <\/span>\n                          <span class=\"tick_text\">\n                           A repost of your pup on our instagram\n                          <\/span>\n                            <\/li>\n                         \n             \t\t\t<li>\n                          <span><i class=\"QS_app_tick fa fa-check-circle\" aria-hidden=\"true\"><\/i>\n                          <\/span>\n                          <span class=\"tick_text\">\n                           An exclusive 20% off discount that you can share with your family and friends (Limit: 1 use per person)\n                          <\/span>\n                            <\/li>\n             \n                        \n                      <\/ul>"
+        }
+      },
+      "QS_ambassador_three_tabs": {
+        "type": "QS_ambassador_three_tabs",
+        "settings": {
+          "heading1": "Requirements for Eligibility",
+          "description1": "<p>Please make sure to not post your referral code onto any Vet Naturals&reg; social media platforms - this special code is made just for your friends, family, and followers.<\/p>\n<p><\/p>\n<p>Do not post your link to coupon websites such as RetailMeNot, Knoji, DealSpotr, BusinessInsider, CouponChief, etc.<\/p>\n<p><\/p>\n<p>If we see your code on any coupon sharing websites, your code will become deactivated. Reselling any Vet Naturals&reg; product is strictly prohibited and will result in loss of membership to the Ambassador program and revocation of your coupon codes.<\/p>\n<p><\/p>\n<p>You cannot refer yourself. Abusing your family and friends discount will result in loss of membership to the Ambassador program and revocation of your coupon codes. You cannot refer yourself. Abusing your family and friends discount will result in loss of membership to the Ambassador program and revocation of your coupon codes.<\/p>\n<p><\/p>\n<p>You are not to use any Vet Naturals logos or trademarks outside of the creative assets we provide.<\/p>\n<p><\/p>\n<p>We may request removal of any Vet Naturals provided assets at any time for any reason.<\/p>\n<p><\/p>\n<p>Vet Naturals reserves the right to reverse commission at any time due to returns, cancellations or erroneous order duplications.<\/p>\n<p><\/p>\n<p>Vet Naturals may suspend or remove your affiliation at any time without warning. Vet Naturals reserves the right, at any time, to review your placement and approve the use of Your Links and require that you change the placement or use to comply with the guidelines provided to you.<\/p>\n<p><\/p>\n<p>You are not an employee of Vet Naturals and must provide an appropriate disclaimer on all promotional content.<\/p>\n<p><\/p>\n<p>Negative commentary or offensive content (ie. Adult themed, discriminatory, threatening, or obscene) will result in disqualified purchases and a loss of commission and\/or affiliation. You must comply with all federal, state and local regulations within your jurisdiction. This includes applicable governing marketing emails (ie CAN-SPAM Act), and all other anti-spam laws.<\/p>",
+          "heading2": "Frequently Asked Questions",
+          "description2": "<p>Please make sure to not post your referral code onto any Vet Naturals&reg; social media platforms - this special code is made just for your friends, family, and followers.<\/p>\n<p><\/p>\n<p>Do not post your link to coupon websites such as RetailMeNot, Knoji, DealSpotr, BusinessInsider, CouponChief, etc.<\/p>\n<p><\/p>\n<p>If we see your code on any coupon sharing websites, your code will become deactivated. Reselling any Vet Naturals&reg; product is strictly prohibited and will result in loss of membership to the Ambassador program and revocation of your coupon codes.<\/p>\n<p><\/p>\n<p>You cannot refer yourself. Abusing your family and friends discount will result in loss of membership to the Ambassador program and revocation of your coupon codes. You cannot refer yourself. Abusing your family and friends discount will result in loss of membership to the Ambassador program and revocation of your coupon codes.<\/p>\n<p><\/p>\n<p>You are not to use any Vet Naturals logos or trademarks outside of the creative assets we provide.<\/p>\n<p><\/p>\n<p>We may request removal of any Vet Naturals provided assets at any time for any reason.<\/p>\n<p><\/p>\n<p>Vet Naturals reserves the right to reverse commission at any time due to returns, cancellations or erroneous order duplications.<\/p>\n<p><\/p>\n<p>Vet Naturals may suspend or remove your affiliation at any time without warning. Vet Naturals reserves the right, at any time, to review your placement and approve the use of Your Links and require that you change the placement or use to comply with the guidelines provided to you.<\/p>\n<p><\/p>\n<p>You are not an employee of Vet Naturals and must provide an appropriate disclaimer on all promotional content.<\/p>\n<p><\/p>\n<p>Negative commentary or offensive content (ie. Adult themed, discriminatory, threatening, or obscene) will result in disqualified purchases and a loss of commission and\/or affiliation. You must comply with all federal, state and local regulations within your jurisdiction. This includes applicable governing marketing emails (ie CAN-SPAM Act), and all other anti-spam laws.<\/p>",
+          "heading3": "Sharing Rules & Instructions",
+          "description3": "<p>Please make sure to not post your referral code onto any Vet Naturals&reg; social media platforms - this special code is made just for your friends, family, and followers.<\/p>\n<p><\/p>\n<p>Do not post your link to coupon websites such as RetailMeNot, Knoji, DealSpotr, BusinessInsider, CouponChief, etc.<\/p>\n<p><\/p>\n<p>If we see your code on any coupon sharing websites, your code will become deactivated. Reselling any Vet Naturals&reg; product is strictly prohibited and will result in loss of membership to the Ambassador program and revocation of your coupon codes.<\/p>\n<p><\/p>\n<p>You cannot refer yourself. Abusing your family and friends discount will result in loss of membership to the Ambassador program and revocation of your coupon codes. You cannot refer yourself. Abusing your family and friends discount will result in loss of membership to the Ambassador program and revocation of your coupon codes.<\/p>\n<p><\/p>\n<p>You are not to use any Vet Naturals logos or trademarks outside of the creative assets we provide.<\/p>\n<p><\/p>\n<p>We may request removal of any Vet Naturals provided assets at any time for any reason.<\/p>\n<p><\/p>\n<p>Vet Naturals reserves the right to reverse commission at any time due to returns, cancellations or erroneous order duplications.<\/p>\n<p><\/p>\n<p>Vet Naturals may suspend or remove your affiliation at any time without warning. VetNaturals reserves the right, at any time, to review your placement and approve the use of Your Links and require that you change the placement or use to comply with the guidelines provided to you.<\/p>\n<p><\/p>\n<p>You are not an employee of Vet Naturals and must provide an appropriate disclaimer on all promotional content.<\/p>\n<p><\/p>\n<p>Negative commentary or offensive content (ie. Adult themed, discriminatory, threatening, or obscene) will result in disqualified purchases and a loss of commission and\/or affiliation. You must comply with all federal, state and local regulations within your jurisdiction. This includes applicable governing marketing emails (ie CAN-SPAM Act), and all other anti-spam laws.<\/p>",
+          "image": "shopify:\/\/shop_images\/requirements-cover.jpg"
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "layout": "grid",
+          "grid": 4,
+          "rows": 6,
+          "show_collection_image": true,
+          "show_vendor": false,
+          "sort_enable": true,
+          "tags_enable": true
+        }
+      },
+      "QS_product_template": {
+        "type": "QS_product_template",
+        "settings": {
+          "enable_timer": true,
+          "timer_start": "May 2, 2020 07:26:00",
+          "timer_ends": "May 3, 2020 18:37:25",
+          "highlight": "Want it shipped today? Order within the next 1h 7m 39s",
+          "features": "<div class=\"col-md-4 QS_features\">\n<i class=\"fa fa-globe\" aria-hidden=\"true\"><\/i>Free U.S. Shipping For orders Over 75$<\/div>\n<div class=\"col-md-3 QS_features\">\n<i class=\"fa fa-truck\" aria-hidden=\"true\"><\/i>Easy 30 day Exchange Policy <\/div><div class=\"col-md-3 QS_features\">\n<i class=\"fa fa-clock-o\" aria-hidden=\"true\"><\/i>7 Day a week Customer Support <\/div>",
+          "show_quantity_selector": true,
+          "show_variant_labels": true,
+          "show_vendor": false,
+          "enable_payment_button": true,
+          "show_share_buttons": true,
+          "media_size": "medium",
+          "enable_image_zoom": true,
+          "enable_video_looping": false
+        }
+      },
+      "QS_Product_made_by_Vets": {
+        "type": "QS_Product_made_by_Vets",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/vet-dog-bg.jpg",
+          "heading": "Made By Vets, Approved By Pets",
+          "description": "We are pet parents too and we understand how much your dog mean to you. We have put the best active ingredients in the chews, so we can make sure your dog has the best hip and joint supplement that's affordable for all.",
+          "features": "<ul>\n                <li class=\"QS_li\">\n<strong>\n                  <img class=\"QS_tick\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/0438\/4395\/files\/green-tick-thumb.jpg?v=1587207448\">\n                  Dog joint Pain relief:<\/strong> Alleviating dog's pain and increasing mobility, \n                our dog supplement for joints contain Glucosamine,MSM, Chondroitin, cold Water,\n                Fish Oils, Omegas 3 & 6 and Organic Turmeric.\n                <\/li>\n                <li class=\"QS_li\">\n                \n               <strong> <img class=\"QS_tick\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/0438\/4395\/files\/green-tick-thumb.jpg?v=1587207448\">\n                Staying Active:<\/strong> Whatever the size and age of your dog, joint supplements with glucosamine\n                can help prevent joint inflamation and provide dog arthritis pain relief.\n                   <\/li>\n                <li class=\"QS_li\">\n                \n                <strong><img class=\"QS_tick\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/0438\/4395\/files\/green-tick-thumb.jpg?v=1587207448\">\n                Enhance your Dog's Health:<\/strong> Dog n Glucosamine, Chondroitin and MSM together provide a  powerful\n                combination that will repair, support and provide healing dog hip and joint support. \n                <\/li>\n                <\/ul>"
+        }
+      },
+      "QS_Reason_To_love": {
+        "type": "QS_Reason_To_love",
+        "settings": {
+          "heading": "Why Dogs And Parents Love Vet Naturals",
+          "description": "Our team of Vets ensures the best natural support for your dog",
+          "image1": "shopify:\/\/shop_images\/Capture1.PNG",
+          "heading1": "Flavorful & Delicious",
+          "image2": "shopify:\/\/shop_images\/Capture2.PNG",
+          "heading2": "Organic Ingredients",
+          "image3": "shopify:\/\/shop_images\/Capture3.PNG",
+          "heading3": "For All Sizes",
+          "image4": "shopify:\/\/shop_images\/Capture4_7269536a-b5ff-4fed-9071-91ec93c65d64.PNG",
+          "heading4": "Anti Inflammatories"
+        }
+      },
+      "QS_Three_steps": {
+        "type": "QS_Three_steps",
+        "settings": {
+          "image1": "shopify:\/\/shop_images\/Capture5.PNG",
+          "heading1": "Glucosamine, Chondroitin, MSM",
+          "description1": "Helps to promote healthy cartilage ligaments, tendons and synovial fluid. They stimulate cartel syntesis and delay cartilage degeneration",
+          "image2": "shopify:\/\/shop_images\/Capture6.PNG",
+          "heading2": "Fish Oil and Fatty Acids",
+          "description2": "High in omega fatty acids, fish oil for dogs helps reduce immflamation, increases stamina, and adds moisture to ensure a healthy skin and coat. Linolenic(Omega 3) and Linoleic(Omega 6) helps with dog arthritis, fighting inflammatory diseases.",
+          "image3": "shopify:\/\/shop_images\/Capture7.PNG",
+          "heading3": "Organic Turmeric",
+          "description3": "Contains a compound called curucumin, the active ingredient, which has antioxidant, anti-inflammatory, antibacterial and wound healing properties for dog health."
+        }
+      },
+      "QS_product_recommendations": {
+        "type": "QS_product_recommendations",
+        "settings": {
+          "show_product_recommendations": true,
+          "heading": "You may also like",
+          "show_vendor": false
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "show_quantity_selector": false,
+          "show_variant_labels": true,
+          "show_vendor": false,
+          "enable_payment_button": false,
+          "show_share_buttons": false,
+          "media_size": "medium",
+          "enable_image_zoom": true,
+          "enable_video_looping": false
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": true,
+          "heading": "You may also like",
+          "show_vendor": false
+        }
+      },
+      "QS_Scholor_banner": {
+        "type": "QS_Scholor_banner",
+        "settings": {
+          "bannerimage": "shopify:\/\/shop_images\/1_bb4e28fe-1909-41a9-80f1-6a557fae8898.png",
+          "tag": "$500 AWARD FOR VETERINARY STUDENTS",
+          "heading": "Veterinary Naturals Announces its Yearly Scholarship Program",
+          "subheading": "The animal lovers at Vet Naturals are excited to announce their yearly scholorship program for up-and-coming veterinary students. We want this $500 award to go to a dedicated student who loves animals and wants to keep them happy and healthy.",
+          "button_label": "Apply For The Scholorship Now",
+          "button_link": "#shopify-section-QS_Eligibility_Requirements"
+        }
+      },
+      "QS_Eligibility_Requirements": {
+        "type": "QS_Eligibility_Requirements",
+        "settings": {
+          "heading": "Elegibility Requirements",
+          "description": "<div class=\"col-md-12 QS_enroll_desc\">\n                   We know how challenging the veterinary field is, and we want this scholorship to go to a hardworking students who needs a push in the right direction.\n                <\/div>\n                 <div class=\"col-md-12 QS_enroll_desc\">\n<strong>If you are 18 or older and with a GPA greater than 3.0<\/strong>, you're welcome to apply.\n                <\/div><strong>\n                <div class=\"col-md-12 QS_enroll_desc_link\">\n                  <a href=\"#shopify-section-QS_Application_Process\" style=\"color: #3d62a1;\"><strong>Interested? Find Out How to Apply Now.<\/strong><\/a>\n                <\/div><\/strong>",
+          "image1": "shopify:\/\/shop_images\/deadline-cover.png",
+          "heading1": "Deadline - March 30, 2021",
+          "image2": "shopify:\/\/shop_images\/winner-cover.png",
+          "heading2": "Winner - April 15, 2021",
+          "image3": "shopify:\/\/shop_images\/forall-cover.png",
+          "heading3": "Your Application is Private",
+          "image4": "shopify:\/\/shop_images\/apply-cover.png",
+          "heading4": "Apply Via The Form Below"
+        }
+      },
+      "QS_Application_Process": {
+        "type": "QS_Application_Process",
+        "settings": {
+          "heading": "Application Process - How To Apply",
+          "subheading": "Because we're looking for the widest entrant pool, we've made our application process as straightforward and easy as possible. <strong>Here's how to apply:<\/strong>",
+          "description": "<ul>\n                        <li>\n                          <span><i class=\"QS_app_tick fa fa-check-circle\" aria-hidden=\"true\"><\/i><\/span>\n                         <span class=\"tick_text\">Write a 1000+ word essay on the topic: \"How Holistic Care Can Help Pets Live Longer, Happier Lives\n                          <\/span> <\/li>\n                        <li>\n                          <span><i class=\"QS_app_tick fa fa-check-circle\" aria-hidden=\"true\"><\/i><\/span>\n                          <span class=\"tick_text\"><strong>Send the completed essay to us at scholarship@vetnaturals.com on or before March 30, 2021<\/strong>\n                          <\/span>\n                        <\/li>\n                        <li>\n                          <span><i class=\"QS_app_tick fa fa-check-circle\" aria-hidden=\"true\"><\/i><\/span><span class=\"tick_text\">\n                          Make sure the essay is in the PDF or Word format, as Google Docs and Dropbox link aren't accepted.\n                          <\/span>\n                          <\/li>\n                        <li>\n                          <span><i class=\"QS_app_tick fa fa-check-circle\" aria-hidden=\"true\"><\/i><\/span><span class=\"tick_text\">\n                          Make the essay creative and original. We don't tolerate plagiarism, and if your work is to be copied external source, it will be rejected.\n                          <\/span>\n                            <\/li>\n                        <li>\n                          <span><i class=\"QS_app_tick fa fa-check-circle\" aria-hidden=\"true\"><\/i><\/span><span class=\"tick_text\">\n                          Don't forget to include your name, your contact information, and your school's name and info.\n                          <\/span>\n                            <\/li>\n                        \n                      <\/ul>",
+          "button_label": "Apply For The Scholarship Now",
+          "button_link": "mailto:gary@vetnaturals.com?subject=Vetnaturals Scholarship Program Application"
+        }
+      },
+      "1588794924176": {
+        "type": "page-home-banner",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/hero.jpg",
+          "heading": "Developed By Vets, <span class=\"black\">Approved By Pets<\/span><span style=\"font-size: 24px; opacity:39%\">®<\/span>",
+          "description": "Providing your loved pet with an effective selection of high quality, natural supplements.",
+          "button_label": "View All Vet Naturals Products",
+          "button_link": "shopify:\/\/collections\/all-products-minus-upsells-downsells",
+          "image2": "shopify:\/\/shop_images\/as-seen.jpg",
+          "solutions": "View our solutions for",
+          "image3": "shopify:\/\/shop_images\/dog1.png",
+          "solutions1": "Health & Wellness",
+          "button_link2": "shopify:\/\/collections\/health-amp-wellness",
+          "image4": "shopify:\/\/shop_images\/dog2.png",
+          "solutions2": "Supplements",
+          "button_link3": "shopify:\/\/collections\/supplements",
+          "image5": "shopify:\/\/shop_images\/dog3.png",
+          "solutions3": "Senior Dogs",
+          "button_link4": "shopify:\/\/collections\/senior-dog"
+        }
+      },
+      "1588803280987": {
+        "type": "page-home-testimonials",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/linda-prof.png",
+          "quote": "“My 15 year old Border Collie likes the smaller size of the kibble. She has become quite fussy with what she eats, but she does like this food.”",
+          "name": "John Doe, <span style=\"color: #8d2d0d;\">Vet Naturals Customer<\/span>",
+          "image2": "shopify:\/\/shop_images\/julia-prof.png",
+          "quote2": "“My dog has been eating this diet for 6 years now and she has been healthy so far. It's not the cheapest of all dog food but it does help her mobility and maintain her weight.”",
+          "name2": "Julia Rohn, <span style=\"color: #8d2d0d;\">Vet Naturals Customer<\/span>"
+        }
+      },
+      "page-about-hero": {
+        "type": "page-about-hero",
+        "settings": {
+          "bannerimage": "shopify:\/\/shop_images\/about-cover-bg.jpg",
+          "tag": "ABOUT US",
+          "heading": "All Natural. All Love.",
+          "subheading": "We are pet parents working with veterinarians to create the best dog supplements. We use the best natural and organic ingredients.  You want the best life for your dog.  We want to make that affordable.",
+          "button_label": "Continue Reading",
+          "button_link": ""
+        }
+      },
+      "page-about-points": {
+        "type": "page-about-points",
+        "settings": {
+          "image": "",
+          "heading": "OUR PASSION",
+          "description": "<ul>\n    <li>\n        <span><i class=\"QS_app_tick fa fa-check-circle\" aria-hidden=\"true\"><\/i><\/span>\n        <span class=\"tick_text\">We are pet parents working with a team of veterinarians to create the best lives for our dogs. We use best natural and organic ingredients. Combining herbs, holistic remedies alongside the traditional active ingredients, we are able to get the best results for our dogs. At the same time, as much as we love our dogs, we know how expensive it can be to take care of your best friend.<\/span> <\/li>\n    <li>\n        <span><i class=\"QS_app_tick fa fa-check-circle\" aria-hidden=\"true\"><\/i><\/span>\n        <span class=\"tick_text\">We became frustrated, angry and dismayed by how much the ‘big’ companies were jacking up the prices of supplements for our dogs.<\/span>\n    <\/li>\n    <li>\n        <span><i class=\"QS_app_tick fa fa-check-circle\" aria-hidden=\"true\"><\/i><\/span>\n        <span class=\"tick_text\">We realized we are not alone, so we set out to create the best line of dog supplements. Our goal was to make them affordable for our family and yours.<\/span>\n        <\/li>                    \n<\/ul>",
+          "button_label": "Button",
+          "button_link": ""
+        }
+      },
+      "page-about-left-points": {
+        "type": "page-about-left-points",
+        "settings": {
+          "image": "",
+          "heading": "Our commitment to Quality, Innovation & Values",
+          "description": "<ul>\n    <li>\n        <span><i class=\"QS_app_tick fa fa-check-circle\" aria-hidden=\"true\"><\/i><\/span>\n        <span class=\"tick_text\">Our ingredients meet stringent U.S. quality standards<\/span> <\/li>\n    <li>\n        <span><i class=\"QS_app_tick fa fa-check-circle\" aria-hidden=\"true\"><\/i><\/span>\n        <span class=\"tick_text\">We do not source ingredients from China<\/span>\n    <\/li>\n    <li>\n        <span><i class=\"QS_app_tick fa fa-check-circle\" aria-hidden=\"true\"><\/i><\/span>\n        <span class=\"tick_text\">Our products are free from fillers, by-products and artificial colors and flavors<\/span>\n    <\/li> \n    <li>\n        <span><i class=\"QS_app_tick fa fa-check-circle\" aria-hidden=\"true\"><\/i><\/span>\n        <span class=\"tick_text\">We will continue to explore formulas and work with top veterinarians to always bring natural and organic human grade ingredients into our products and to your dog<\/span>\n    <\/li>                    \n<\/ul>"
+        }
+      },
+      "page-about-nutrition": {
+        "type": "page-about-nutrition",
+        "settings": {
+          "heading": "Nutrition",
+          "description": "Our dogs deserve only human grade ingredients, quality and the best nutrition. So Veterinary Naturals supplements only contain the highest quality medicinal, natural and organic ingredients. You can feel safe and know that we never source any ingredients from China. All our products are made in the USA.",
+          "image1": "",
+          "heading1": "TURMERIC",
+          "image2": "",
+          "heading2": "HEMP OIL",
+          "image3": "",
+          "heading3": "GINGER",
+          "image4": "",
+          "heading4": "FISH OIL",
+          "image5": "",
+          "heading5": "CHICKEN",
+          "image6": "",
+          "heading6": "LIVER"
+        }
+      },
+      "page-about-safety": {
+        "type": "page-about-safety",
+        "settings": {
+          "image": "",
+          "heading": "Safety",
+          "description": "<ul>\n    <li>\n        <span><i class=\"QS_app_tick fa fa-check-circle\" aria-hidden=\"true\"><\/i><\/span>\n        <span class=\"tick_text\">We work with suppliers who are cGMP and\/or meet the FDA’s highest standards for quality<\/span> <\/li>\n    <li>\n        <span><i class=\"QS_app_tick fa fa-check-circle\" aria-hidden=\"true\"><\/i><\/span>\n        <span class=\"tick_text\">All of our products are manufactured in the United States<\/span>\n    <\/li>\n    <li>\n        <span><i class=\"QS_app_tick fa fa-check-circle\" aria-hidden=\"true\"><\/i><\/span>\n        <span class=\"tick_text\">Testing is conducted at all stages of the manufacturing process<\/span>\n    <\/li>                   \n<\/ul>",
+          "button_label": "Title",
+          "button_link": ""
+        }
+      },
+      "QS_Three_steps_HipJoint": {
+        "type": "QS_Three_steps_HipJoint",
+        "settings": {
+          "image1": "",
+          "heading1": "Glucosamine, Chondroitin, MSM",
+          "description1": "Helps to promote healthy cartilage ligaments, tendons and synovial fluid. They stimulate cartel syntesis and delay cartilage degeneration",
+          "image2": "",
+          "heading2": "Fish Oil and Fatty Acids",
+          "description2": "High in omega fatty acids, fish oil for dogs helps reduce immflamation, increases stamina, and adds moisture to ensure a healthy skin and coat. Linolenic(Omega 3) and Linoleic(Omega 6) helps with dog arthritis, fighting inflammatory diseases.",
+          "image3": "",
+          "heading3": "Organic Turmeric",
+          "description3": "Contains a compound called curucumin, the active ingredient, which has antioxidant, anti-inflammatory, antibacterial and wound healing properties for dog health."
+        }
+      }
+    },
+    "content_for_index": [
+      "1588794924176",
+      "1587441955395",
+      "1588803280987",
+      "1587418343695",
+      "1587429737414",
+      "1587506794426"
+    ]
+  },
+  "presets": {
+    "Default": {
+      "color_text": "#3d4246",
+      "color_body_text": "#69727b",
+      "color_sale_text": "#557B97",
+      "color_borders": "#e8e9eb",
+      "color_button": "#557B97",
+      "color_button_text": "#fff",
+      "color_small_button_text_border": "#3d4246",
+      "color_text_field": "#fff",
+      "color_text_field_text": "#000",
+      "color_text_field_border": "#949494",
+      "color_image_overlay_text": "#fff",
+      "color_image_overlay": "#3d4246",
+      "image_overlay_opacity": 40,
+      "color_body_bg": "#fff",
+      "type_header_font": "work_sans_n6",
+      "type_header_base_size": 26,
+      "type_base_font": "work_sans_n4",
+      "type_base_size": 16,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {}
+        },
+        "hero": {
+          "type": "hero",
+          "settings": {
+            "text_size": "large"
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slideshow-0": {
+              "type": "image",
+              "settings": {}
+            },
+            "slideshow-1": {
+              "type": "image",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "slideshow-0",
+            "slideshow-1"
+          ],
+          "settings": {}
+        },
+        "featured-collections": {
+          "type": "collection",
+          "settings": {
+            "collection": "frontpage"
+          }
+        },
+        "feature-row": {
+          "type": "feature-row",
+          "settings": {}
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "link_list": {
+              "type": "link_list",
+              "settings": {}
+            },
+            "text": {
+              "type": "text",
+              "settings": {}
+            },
+            "newsletter": {
+              "type": "newsletter",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "link_list",
+            "text",
+            "newsletter"
+          ],
+          "settings": {}
+        }
+      },
+      "content_for_index": [
+        "hero",
+        "featured-collections",
+        "feature-row",
+        "slideshow"
+      ]
+    },
+    "Light": {
+      "color_text": "#162950",
+      "color_body_text": "#6d6d6d",
+      "color_sale_text": "#DA2F0C",
+      "color_borders": "#e4e4e4",
+      "color_button": "#DA2F0C",
+      "color_button_text": "#ffffff",
+      "color_small_button_text_border": "#162950",
+      "color_text_field": "#ffffff",
+      "color_text_field_text": "#162950",
+      "color_text_field_border": "#909090",
+      "color_image_overlay_text": "#ffffff",
+      "color_image_overlay": "#3d3d3d",
+      "image_overlay_opacity": 40,
+      "color_body_bg": "#f8f8f8",
+      "type_header_font": "muli_n6",
+      "type_header_base_size": 26,
+      "type_base_font": "muli_n4",
+      "type_base_size": 18,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "social_twitter_link": "",
+      "social_facebook_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_tumblr_link": "",
+      "social_snapchat_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "favicon": "",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "small",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#e8f3f6",
+      "checkout_heading_font": "Roboto",
+      "checkout_body_font": "Source Sans Pro",
+      "checkout_accent_color": "#1990c6",
+      "checkout_button_color": "#23314e",
+      "checkout_error_color": "#ff6d6d",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "align_logo": "left",
+            "logo": "",
+            "logo_max_width": 135,
+            "main_linklist": "main-menu",
+            "message": true,
+            "color_bg": "#162950",
+            "color_text": "#ffffff"
+          }
+        },
+        "hero": {
+          "type": "hero",
+          "settings": {
+            "alignment": "center",
+            "hero_size": "x-large",
+            "text_size": "large"
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slideshow-0": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "alignment": "center center"
+              }
+            },
+            "1492095993817": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "alignment": "center"
+              }
+            }
+          },
+          "block_order": [
+            "slideshow-0",
+            "1492095993817"
+          ],
+          "settings": {
+            "slideshow_height": "medium",
+            "text_size": "medium",
+            "autorotate": false,
+            "autorotate_speed": 5
+          }
+        },
+        "featured-collections": {
+          "type": "collection",
+          "settings": {
+            "grid": 3,
+            "rows": 1,
+            "show_vendor": true,
+            "show_view_all": true
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "show_quantity_selector": false,
+            "show_variant_labels": true,
+            "show_vendor": false,
+            "show_share_buttons": true,
+            "media_size": "medium",
+            "enable_image_zoom": true,
+            "enable_video_looping": false
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "layout": "grid",
+            "grid": 2,
+            "rows": 2,
+            "show_collection_image": true,
+            "show_vendor": false,
+            "sort_enable": true,
+            "tags_enable": true
+          }
+        },
+        "1492033809691": {
+          "type": "map",
+          "settings": {}
+        },
+        "1492033877875": {
+          "type": "quotes",
+          "blocks": {
+            "1492033877875-0": {
+              "type": "quote",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1492033877875-0"
+          ],
+          "settings": {}
+        },
+        "1492033924902": {
+          "type": "custom-content",
+          "blocks": {
+            "1492033924902-0": {
+              "type": "text",
+              "settings": {
+                "width": "100%",
+                "alignment": "center",
+                "align_text": "center"
+              }
+            }
+          },
+          "block_order": [
+            "1492033924902-0"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "1492096252560": {
+          "type": "collection-list",
+          "blocks": {
+            "1492096252560-0": {
+              "type": "featured_collection",
+              "settings": {}
+            },
+            "1492096252560-1": {
+              "type": "featured_collection",
+              "settings": {}
+            },
+            "1492096252560-2": {
+              "type": "featured_collection",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1492096252560-0",
+            "1492096252560-1",
+            "1492096252560-2"
+          ],
+          "settings": {
+            "grid": 3
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "layout": "grid",
+            "blog_show_author": true,
+            "blog_show_date": false
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "blog_show_author": true,
+            "blog_show_date": true,
+            "show_share_buttons": true
+          }
+        },
+        "cart-template": {
+          "type": "cart-template",
+          "settings": {
+            "cart_notes_enable": false
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "link_list": {
+              "type": "link_list",
+              "settings": {}
+            },
+            "text": {
+              "type": "text",
+              "settings": {}
+            },
+            "newsletter": {
+              "type": "newsletter",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "link_list",
+            "text",
+            "newsletter"
+          ],
+          "settings": {}
+        }
+      },
+      "content_for_index": [
+        "hero",
+        "featured-collections",
+        "slideshow",
+        "1492033924902",
+        "1492096252560",
+        "1492033877875",
+        "1492033809691"
+      ]
+    }
+  }
+}

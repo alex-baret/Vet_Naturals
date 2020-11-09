@@ -1,0 +1,131 @@
+{% include 'product-content.zipifypages', contentprt: 'header' %}{% comment %}
+  The contents of the product.liquid template can be found in /sections/product-template.liquid
+{% endcomment %}
+
+{% section 'QS_product_template' %}
+{% section 'QS_Product_made_by_Vets' %}
+{% section 'QS_Reason_To_love' %}
+{% section 'QS_Three_steps' %} 
+ <div id='Areviewsapp' class='page-full'>{% include 'aliexpress_reviews' %}</div>
+{% comment %}{% section 'QS_Product_Review' %}
+{% section 'QS_Product_comments' %}{% endcomment %}
+{% section 'QS_product_recommendations' %}
+
+
+{% if collection %}
+  <div class="text-center return-link-wrapper page-width">
+    <a href="{{ collection.url }}" class="btn btn--secondary btn--has-icon-before return-link">
+      {% include 'icon-arrow-left' %}
+      {{ 'products.product.back_to_collection' | t: title: collection.title }}
+    </a>
+  </div>
+{% endif %}
+<div class="QS_btn_space">
+  <div class="col-12">
+    <div class="row">
+  		<div class="col-md-4"></div>
+  		<div class="col-md-4">
+    
+    		<a href="#PageContainer"><div class="back_to_top_btn">Back To Top &nbsp;<i class="fa fa-arrow-up" aria-hidden="true"></i></div></a>
+  		</div>
+   		<div class="col-md-4"></div>
+    </div>
+  </div>
+</div>
+<script>
+  // Override default values of shop.strings for each template.
+  // Alternate product templates can change values of
+  // add to cart button, sold out, and unavailable states here.
+  theme.productStrings = {
+    addToCart: {{ 'products.product.add_to_cart' | t | json }},
+    soldOut: {{ 'products.product.sold_out' | t | json }},
+    unavailable: {{ 'products.product.unavailable' | t | json }}
+  }
+</script>
+
+{% assign current_variant = product.selected_or_first_available_variant %}
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Product",
+  "name": {{ product.title | json }},
+  "url": {{ shop.url | append: product.url | json }},
+  {%- if product.featured_media -%}
+    {%- assign media_size = product.featured_media.preview_image.width | append: 'x' -%}
+    "image": [
+      {{ product.featured_media | img_url: media_size | prepend: "https:" | json }}
+    ],
+  {%- endif -%}
+  "description": {{ product.description | strip_html | json }},
+  {%- if current_variant.sku != blank -%}
+    "sku": {{ current_variant.sku | json }},
+  {%- endif -%}
+  "brand": {
+    "@type": "Thing",
+    "name": {{ product.vendor | json }}
+  },
+  "offers": [
+    {%- for variant in product.variants -%}
+      {
+        "@type" : "Offer",
+        {%- if variant.sku != blank -%}
+          "sku": {{ variant.sku | json }},
+        {%- endif -%}
+        "availability" : "http://schema.org/{% if product.available %}InStock{% else %}OutOfStock{% endif %}",
+        "price" : {{ variant.price | divided_by: 100.00 | json }},
+        "priceCurrency" : {{ cart.currency.iso_code | json }},
+        "url" : {{ shop.url | append: variant.url | json }}
+      }{% unless forloop.last %},{% endunless %}
+    {%- endfor -%}
+  ]
+}
+</script>
+<style>
+.back_to_top_btn {
+   	display: flex;
+    background-image: linear-gradient(#f59517,#f1b52b);
+    text-align: center;
+    margin: auto;
+    padding: 15px;
+    color: #fff;
+    justify-content: center;
+    /* margin: 15px; */
+    border-radius: 9px; 
+    font-size:14px;
+    font-family: 'Proxima Nova Lt';
+}
+  
+.back_to_top_btn .fa {
+	width:20px; 
+   	font-size: 16px;
+}
+ 
+.QS_btn_space {
+   	padding:40px; 
+}
+
+label[for] {
+    	cursor: pointer;
+    	color: #565656;
+    	font-family: 'Proxima Nova Lt';
+    	font-size: 17px;
+  		margin-top: 17px;
+}
+@media (max-width: 767px) {
+label[for] {
+  		margin-top: 0px;
+} 
+}
+.price--on-sale .price__badge--sale {
+	display: none;
+}
+ 
+span.price-item.price-item--sale {
+    color: #fff;
+}  
+  
+s.price-item.price-item--regular {
+    color: #fff;
+}
+</style>{% include 'product-content.zipifypages', contentprt: 'footer' %}
