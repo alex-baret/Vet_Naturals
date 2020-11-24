@@ -51,18 +51,17 @@
           <input type="tel" id="{{ formId }}-phone" name="contact[{{ 'contact.form.phone' | t }}]" pattern="[0-9\-]*" value="{% if form[phone] %}{{ form[phone] }}{% elsif customer %}{{ customer.phone }}{% endif %}">
 
           <label for="dog-breed">What Type of Breed is Your Dog?</label>
-          <select id="dog-breed" name="contact[Dog Breed]" onchange='CheckBreed(this.value);'> 
-              
-              <option value="">Retriever (Labrador)</option>
-              <option value="">German Shepard</option>
-              <option value="">Retriever (Golden)</option>
-              <option value="">French Bulldog</option>
-              <option value="">Bulldog</option>
-              <option value="">Poodle</option>
-              <option value="">Beagle</option>
-              <option value="">Rottweiler</option>
-              <option value="">German Shorthaired Pointer</option>
-              <option value="">Pembroke Welsh Corgi</option>
+          <select id="dog-breed" name="contact[Dog Breed]" onchange='CheckBreed(this.value);'>    
+              <option value="Retriever (Labrador)">Retriever (Labrador)</option>
+              <option value="German Shepard">German Shepard</option>
+              <option value="Retriever (Golden)">Retriever (Golden)</option>
+              <option value="French Bulldog">French Bulldog</option>
+              <option value="Bulldog">Bulldog</option>
+              <option value="Poodle">Poodle</option>
+              <option value="Beagle">Beagle</option>
+              <option value="Rottweiler">Rottweiler</option>
+              <option value="German Shorthaired Pointer">German Shorthaired Pointer</option>
+              <option value="Pembroke Welsh Corgi">Pembroke Welsh Corgi</option>
               <option value="other">Other</option>
           </select>
           <input type="text" name="contact[OtherBreed]" id="otherbreed" style="display:none;" />
@@ -83,7 +82,7 @@
 <script type="text/javascript">
     function CheckBreed(val){
      var element=document.getElementById('otherbreed');
-     if(val=='Other')
+     if(val=='other')
        element.style.display='block';
      else  
        element.style.display='none';
