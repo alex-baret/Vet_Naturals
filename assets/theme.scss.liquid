@@ -9751,3 +9751,213 @@ padding-left: 10px;
 .btnqty.qtyplus{ width: 15%; text-align: right;}
 .quantity-input-vet {border: none;border: none;padding: 8px;text-align: center;width: 67%;outline: none;display: inline-block;}
 //.qtydiv {display: inline-block;padding-right: 15px;padding-top: 10px;}
+
+
+
+/*====================================*/
+/* Samples Page */
+/*====================================*/
+ 
+.survey {
+  margin: 0 0 100px;
+  @media (max-width: 749px) {
+    margin: 0 0 50px;
+  }
+  .fieldset {
+    margin: 50px 0;
+    padding: 0;
+  }
+  .fieldset + .fieldset {
+    margin-top: 0;
+  }
+  .button-yellow {
+    margin: 0;
+  }
+}
+
+.survey-message {
+  display: none;
+  &.show {
+    display: block;
+  }
+}
+
+.survey-message--pre {
+  background-size: 100%;
+  @extend .banner-home-bg;
+  background-position: right center;
+  
+  @media (max-width: 1245px) {
+    padding-top: 90px;
+  }
+  @media (max-width: 749px) {
+    background-size: 150%;
+    background-position: right top;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    .home-title-mobile {
+      margin-top: 70%;
+    }
+  }
+  @media (max-width: 660px) {
+    padding-bottom: 50px;
+  }
+  @media (max-width: 580px) {
+    padding-bottom: 50px;
+  }
+  @media (max-width: 414px) {
+    padding-bottom: 50px;
+  }
+}
+.survey-message--post {
+  @extend .banner-home-bg;
+  background-position: top left;
+  background-size: 90%;
+  
+  @media (max-width: 1245px) {
+    // background-position: 0px;
+    padding-top: 90px;
+  }
+  @media (max-width: 749px) {
+    background-size: 150%;
+    // background-position: left top;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    .home-title-mobile {
+      margin-top: 90%;
+    }
+  }
+  @media (max-width: 660px) {
+    padding-bottom: 50px;
+  }
+  @media (max-width: 580px) {
+    padding-bottom: 50px;
+  }
+  @media (max-width: 414px) {
+    padding-bottom: 50px;
+  }
+}
+
+.survey__content {
+  max-width: 460px;
+  padding-bottom: 200px;
+  @media (max-width: 749px) {
+    padding-bottom: 100px;
+  }
+  .survey__title:first-line {
+    @extend .blue;
+  }
+}
+
+.survey__form {
+  width: 100%;
+  max-width: 950px;
+  margin: -70px auto 0;
+  background: #fff;
+  box-shadow: 0 0 30px rgba(0,0,0,0.25);
+  border-radius: 20px;
+  padding: 8%;
+  @media (max-width: 749px) {
+    // padding: 80px;
+  }
+}
+
+.stepCounter {
+  margin-bottom: 50px;
+  ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  li {
+    width: 55px;
+    height: 55px;
+    border: 2px solid #ebdcd9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // margin: 0 25px;
+    &.active {
+      background: #f5efef;
+    }
+  }
+}
+
+.card__wrapper {
+  max-width: 415px;
+  margin: 0 auto;
+}
+
+.survey__card {
+  // border: 2px dotted pink;
+  text-align: center;
+  display: none;
+  &.active {
+    display: block;
+  }
+
+  .survey__example {
+    text-align: left;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  select {
+    border: 2px solid #e3e3e3;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .options {
+    input[type="radio"] + label,
+    input[type="checkbox"] + label {
+      margin: 0 20px 10px;
+      min-width: 175px;
+      text-align: center;
+      padding: 5px;
+      border-radius: 20px;
+      border: 2px solid #e6e4e4;
+    }
+
+    input[type="radio"] + label:hover,
+    input[type="radio"]:checked + label,
+    input[type="checkbox"] + label:hover,
+    input[type="checkbox"]:checked + label {
+      background: #f5efef;
+    }
+  }
+  
+  label[for="consent-email"] {
+    font-weight: normal;
+    margin-left: 10px;
+  }
+  
+
+  .important-info {
+    margin-bottom: 0;
+    input:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+  }
+
+  select[multiple] {
+    background-image: unset;
+    // height: 120px;
+  }
+
+}
+
+.whitelist {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
