@@ -9961,3 +9961,41 @@ padding-left: 10px;
   font-size: 1.2rem;
   margin-top: 2rem;
 }
+
+.button-yellow:hover:not([disabled]),
+a.button-yellow:hover:not([disabled]) {
+	transform: translateY(-4px);
+  transition-duration: 0.3s;
+  color: #fff;
+}
+
+.button-yellow,
+a.button-yellow { 
+  background-image: linear-gradient(#f19f3f, #efb83c); 
+  border-radius: 6px; 
+  height: 58px; 
+  color: #fff; 
+  width: 100%; 
+  max-width: 410px; 
+  border: 0px;
+  font-family: 'Proxima Nova Lt';
+  text-shadow: 0px 2px #55555533;
+  margin-right: 15px; 
+  margin-left: 15px
+}
+
+.button-yellow a, .button-yellow a:hover{
+	color: #ffffff;
+  font-family: 'Proxima Nova Lt';
+  text-shadow: 0px 2px #55555533;
+}
+
+.button-yellow-next {
+	width: 10px;
+  height: auto;
+  margin-left: 5px;
+}
+
+.button-yellow:disabled {
+  opacity: 0.5;
+}
