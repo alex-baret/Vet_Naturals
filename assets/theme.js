@@ -4108,6 +4108,102 @@ theme.Hero = (function() {
   return hero;
 })();
 
+theme.Survey = (function() {
+  var stepCount = 1;
+  var stepCounterLimit = 4;
+
+  var selectors = {
+    surveyStepCounter: '.stepCounter',
+    surveyStep: '.survey__step',
+    surveyForm: '.survey__form',
+    surveyCards: '.survey__card',
+    advanceStepButton: '[data-advance-step]'
+  };
+
+  KlaviyoSubscribe.attachToForms("#survey__form", {
+    extra_properties: {
+      $source: 'Samples Form',
+      $method_type: "Klaviyo Form",
+      $method_id: 'embed'
+    },
+    success: function() {
+      // Advance to final Slide
+      advanceCount();
+      
+      // Show complete message
+      $(".survey-message").toggleClass("show");
+      window.scroll({
+        top: 0, 
+        left: 0, 
+        behavior: 'smooth'
+      });
+    },
+    error: function(err) {
+      console.error("error", err);
+      alert("There seems to be a problem. Please try re-submitting later");
+    }
+  });
+
+  function init() {
+    this.$advanceStepButton = $(selectors.advanceStepButton);
+
+    if (!this.$advanceStepButton) return;
+
+    validateCardInputs();
+
+    this.$advanceStepButton.on('click', advanceCount);
+  }
+
+  function advanceCount() {
+    stepCount += 1;
+    advanceStep(stepCount);
+    advanceCard(stepCount);
+  }
+
+  function advanceStep(step) {
+    if (step > stepCounterLimit) {
+      $(selectors.surveyStepCounter).addClass("visually-hidden");
+    } else {
+      $(selectors.surveyStep).removeClass("active");
+      $(`${selectors.surveyStep}#step${step}`).addClass("active");
+    }
+  }
+  
+  function advanceCard(card) {
+    $(selectors.surveyCards).removeClass("active");
+    $(`${selectors.surveyCards}#card${card}`).addClass("active");
+  }
+
+  function validateCardInputs() {
+    $('.survey__card').each(function(){
+      var $parent = $(this);
+      var $inputs = $parent.find('input, select');
+      var valid = false;
+      $inputs.on('change keypress keyup blur', function() {
+        $inputs.each(function(){
+          var validation = $(this)[0].checkValidity()
+          if (validation) {
+            valid = true
+          } else {
+            valid = false;
+            return false;
+          }
+        });
+
+        if (valid) {
+          $parent.find("[data-advance-step], button[type=submit]").prop("disabled", false);
+        } else {
+          $parent.find("[data-advance-step], button[type=submit]").prop("disabled", true);
+        }
+      })
+    });
+  }
+
+  return {
+    init: init
+  };
+})();
+
 // prettier-ignore
 window.theme = window.theme || {};
 
@@ -7550,6 +7646,8 @@ theme.init = function() {
   $(document).one('touchstart', function() {
     theme.Helpers.setTouch();
   });
+
+  theme.Survey.init();
 };
 
 // Youtube API callback
@@ -7560,114 +7658,3 @@ function onYouTubeIframeAPIReady() {
 }
 
 $(theme.init);
-
-$('.qtybox .btnqty').on('click', function(){
-  var qty = parseInt($(this).parent('.qtybox').find('.quantity-input-vet').val());
-  if($(this).hasClass('qtyplus')) {
-    qty++;
-  }else {
-    if(qty > 1) {
-      qty--;
-    }
-  }
-  qty = (isNaN(qty))?1:qty;
-  $(this).parent('.qtybox').find('.quantity-input-vet').val(qty);
-}); 
-
-
-// ----- Samples Form Function ------- // 
-theme.Survey = (function() {
-  var stepCount = 1;
-  var stepCounterLimit = 4;
-
-  var selectors = {
-    surveyStepCounter: '.stepCounter',
-    surveyStep: '.survey__step',
-    surveyForm: '.survey__form',
-    surveyCards: '.survey__card',
-    advanceStepButton: '[data-advance-step]'
-  };
-
-  KlaviyoSubscribe.attachToForms("#survey__form", {
-    extra_properties: {
-      $source: 'Samples Form',
-      $method_type: "Klaviyo Form",
-      $method_id: 'embed'
-    },
-    success: function() {
-      // Advance to final Slide
-      advanceCount();
-      
-      // Show complete message
-      $(".survey-message").toggleClass("show");
-      window.scroll({
-        top: 0, 
-        left: 0, 
-        behavior: 'smooth'
-      });
-    },
-    error: function(err) {
-      console.error("error", err);
-      alert("There seems to be a problem. Please try re-submitting later");
-    }
-  });
-
-  function init() {
-    this.$advanceStepButton = $(selectors.advanceStepButton);
-
-    if (!this.$advanceStepButton) return;
-
-    validateCardInputs();
-
-    this.$advanceStepButton.on('click', advanceCount);
-  }
-
-  function advanceCount() {
-    stepCount += 1;
-    advanceStep(stepCount);
-    advanceCard(stepCount);
-  }
-
-  function advanceStep(step) {
-    if (step > stepCounterLimit) {
-      $(selectors.surveyStepCounter).addClass("visually-hidden");
-    } else {
-      $(selectors.surveyStep).removeClass("active");
-      $(`${selectors.surveyStep}#step${step}`).addClass("active");
-    }
-  }
-  
-  function advanceCard(card) {
-    $(selectors.surveyCards).removeClass("active");
-    $(`${selectors.surveyCards}#card${card}`).addClass("active");
-  }
-
-  function validateCardInputs() {
-    $('.survey__card').each(function(){
-      var $parent = $(this);
-      var $inputs = $parent.find('input, select');
-      var valid = false;
-      $inputs.on('change keypress keyup blur', function() {
-        $inputs.each(function(){
-          var validation = $(this)[0].checkValidity()
-          if (validation) {
-            valid = true
-          } else {
-            valid = false;
-            return false;
-          }
-        });
-
-        if (valid) {
-          $parent.find("[data-advance-step], button[type=submit]").prop("disabled", false);
-        } else {
-          $parent.find("[data-advance-step], button[type=submit]").prop("disabled", true);
-        }
-      })
-    });
-  }
-
-  return {
-    init: init
-  };
-})();
