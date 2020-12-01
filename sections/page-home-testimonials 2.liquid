@@ -1,0 +1,116 @@
+<!-- For Background Section Image -->
+{% assign section_image = section.settings.image| img_url: '800x' %}
+{% assign section_image2 = section.settings.image2| img_url: '800x' %}
+
+<!-- Begin Section -->
+<div class="diagonal-bg">
+    <div class="content-diagonal">
+        <div class="page-width">
+            <div class="row">
+                <div class="test-box-outline">
+                    <div class="row">
+                        <!-- Testimonial Image -->
+                        <div class="test-img">
+                            <img src="{{section_image}}" />
+                        </div>
+                        <!-- Testimonial Image END -->
+                        <!-- Testimonial Text -->
+                        <div class="test-paragraph"> 
+                            <p><i>{{section.settings.quote}}</i></p>
+                            <p>{{section.settings.name}}</p>
+                        </div>
+                        <!-- Testimonial Text END -->
+                    </div>
+                </div>
+                <div class="test-box-outline">
+                    <div class="row">
+                        <!-- Testimonial Image -->
+                        <div class="test-img">
+                            <img src="{{section_image2}}" />
+                        </div>
+                        <!-- Testimonial Image END -->
+                        <!-- Testimonial Text -->
+                        <div class="test-paragraph"> 
+                            <p><i>{{section.settings.quote2}}</i></p>
+                            <p>{{section.settings.name2}}</p>
+                        </div>
+                        <!-- Testimonial Text END -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Testimonials Home",
+    "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": {
+           
+            "en": "Testimonial Profile Picture"
+           
+          }
+        },
+        {
+          "type": "textarea",
+          "id": "quote",
+          "label": {
+                   "en": "Quote"
+              },
+          "default": {
+                   "en": "Type a quote here"
+              }
+        },
+        {
+          "type": "textarea",
+          "id": "name",
+          "label": {
+                   "en": "Name"
+              },
+          "default": {
+                   "en": "Name of person"
+              }
+        },
+        {
+          "type": "image_picker",
+          "id": "image2",
+          "label": {
+           
+            "en": "Testimonial Profile Picture"
+           
+          }
+        },
+        {
+          "type": "textarea",
+          "id": "quote2",
+          "label": {
+                   "en": "Quote"
+              },
+          "default": {
+                   "en": "Type a quote here"
+              }
+        },
+        {
+          "type": "textarea",
+          "id": "name2",
+          "label": {
+                   "en": "Name"
+              },
+          "default": {
+                   "en": "Name of person"
+              }
+        }
+    ]
+    ,
+    "presets": [
+        {
+        "name": "Testimonials Home",
+        "category": "VetNaturals"
+        }
+    ]
+  }
+{% endschema %}

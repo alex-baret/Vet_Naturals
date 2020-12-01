@@ -1,0 +1,194 @@
+{% assign section_image1 = section.settings.image1| img_url: '800x' %}
+{% assign section_image2 = section.settings.image2| img_url: '800x' %}
+{% assign section_image3 = section.settings.image3| img_url: '800x' %}
+{%comment%} ----- Start of dups ---- {%endcomment%}
+{% assign section_image4 = section.settings.image4| img_url: '800x' %}
+{% assign section_image5 = section.settings.image5| img_url: '800x' %}
+{% assign section_image6 = section.settings.image6| img_url: '800x' %}
+<div class="page-width">
+    <div class="row sec_text_center">
+	<div class="col-md-12">  
+      <span class="sec_heading sec_text_center"></span></div>
+  </div>  
+      <div class="row sec_text_center">
+        <div class="col-md-12">
+            <span class="sec_desc "> 
+          </span>
+        </div>  
+  		</div>  
+   <div class="row sec_text_center div_padding_top">
+     <div class="col-md-4" style="margin-bottom: 20px;">
+       <div class="QS_sec_img_div">
+         <div class="div_img_container" style="background-image:url({{ product.metafields["global"]["Section-4-Image1"] }}); background-size: 104px; background-position: left bottom">
+         </div>
+         <div class="QS_num"></div>
+         <div class="QS_sec_head">
+           <div class="QS_sec_line"></div>
+              <div class="QS_sec_text">{{ product.metafields["global"]["Section-4-Title1"] }}</div>
+           
+       </div>
+       <div class="row">
+          <div class="col-md-12 Sec_desc">
+        {{ product.metafields["global"]["Section-4-Desc1"] }}
+            
+             </div>
+           </div>
+       </div>
+     </div>
+      <div class="col-md-4" style="margin-bottom: 20px;">
+        <div class="QS_sec_img_div">
+          <div class="div_img_container" style="background-image:url({{ product.metafields["global"]["Section-4-Image2"] }}); background-size: 143px; background-position: left bottom">
+        </div>
+          <div class="QS_num"></div>
+          
+          <div class="QS_sec_head">
+            <div class="QS_sec_line"></div>
+              <div class="QS_sec_text">{{ product.metafields["global"]["Section-4-Title2"] }}</div>
+        </div>
+        	<div class="row">
+          <div class="col-md-12 Sec_desc">
+        {{ product.metafields["global"]["Section-4-Desc2"] }}
+              </div>
+           </div>
+         </div>
+     </div>
+      <div class="col-md-4" style="margin-bottom: 20px;">
+        <div class="QS_sec_img_div">
+          <div class="div_img_container" style="background-image:url({{ product.metafields["global"]["Section-4-Image3"] }}); background-size: 155px; background-position: left bottom">
+        	</div>
+          <div class="QS_num"></div>
+            <div class="QS_sec_head">
+              <div class="QS_sec_line"></div>
+              <div class="QS_sec_text">{{ product.metafields["global"]["Section-4-Title3"] }}</div>
+              
+            </div>
+          <div class="row">
+          <div class="col-md-12 Sec_desc">
+                  {{ product.metafields["global"]["Section-4-Desc3"] }}
+             </div>
+           </div>
+        </div>
+     </div>
+     <div class="col-md-4" style="margin-bottom: 20px;">
+       <div class="QS_sec_img_div">
+         <div class="div_img_container" style="background-image:url({{ product.metafields["global"]["Section-4-Image4"] }}); background-size: 104px; background-position: left bottom">
+         </div>
+         <div class="QS_num"></div>
+         <div class="QS_sec_head">
+           <div class="QS_sec_line"></div>
+              <div class="QS_sec_text">{{ product.metafields["global"]["Section-4-Title4"] }}</div>
+           
+       </div>
+       <div class="row">
+          <div class="col-md-12 Sec_desc">
+        {{ product.metafields["global"]["Section-4-Desc4"] }}
+            
+             </div>
+           </div>
+       </div>
+     </div>
+          
+     
+   </div>
+</div>
+{% schema %}
+  {
+    "name": "Ingredient Section",
+    "settings": [ 	 	
+		{
+          "type": "image_picker",
+          "id": "image1",
+          "label": {
+           
+            "en": "Image 1"
+           
+          }
+        },
+  
+		{
+          "type": "text",
+          "id": "heading1",
+          "label": {
+                   "en": "Title 1 "
+              },
+          "default": {
+                   "en": "Glucosamine, Chondroitin, MSM"
+              }
+        },
+		{
+          "type": "textarea",
+          "id": "description1",
+          "label": {
+                   "en": "Description 1 "
+              },
+          "default": {
+                   "en": " Helps to promote healthy cartilage ligaments, tendons and synovial fluid. They stimulate cartel syntesis and delay cartilage degeneration"
+              }
+        },
+
+
+		{
+          "type": "image_picker",
+          "id": "image2",
+          "label": {
+           
+            "en": "Image 2"
+           
+          }
+        },
+  
+		{
+          "type": "text",
+          "id": "heading2",
+          "label": {
+                   "en": "Title 2"
+              },
+          "default": {
+                   "en": "Fish Oil and Fatty Acids"
+              }
+        },
+		
+		{
+          "type": "textarea",
+          "id": "description2",
+          "label": {
+                   "en": "Description 2 "
+              },
+          "default": {
+                   "en": "High in omega fatty acids, fish oil for dogs helps reduce immflamation, increases stamina, and adds moisture to ensure a healthy skin and coat. Linolenic(Omega 3) and Linoleic(Omega 6) helps with dog arthritis, fighting inflammatory diseases."
+              }
+        },
+		{
+          "type": "image_picker",
+          "id": "image3",
+          "label": {
+           
+            "en": "Image 3"
+           
+          }
+        },
+  
+		{
+          "type": "text",
+          "id": "heading3",
+          "label": {
+                   "en": "Title 3"
+              },
+          "default": {
+                   "en": "Organic Turmeric"
+              }
+        },
+		{
+          "type": "textarea",
+          "id": "description3",
+          "label": {
+                   "en": "Description 3 "
+              },
+          "default": {
+                   "en": "Contains a compound called curucumin, the active ingredient, which has antioxidant, anti-inflammatory, antibacterial and wound healing properties for dog health."
+              }
+        }
+		
+ 	]
+  }
+{% endschema %}

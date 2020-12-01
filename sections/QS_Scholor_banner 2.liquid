@@ -1,0 +1,199 @@
+{% assign section_image = section.settings.bannerimage| img_url: '800x' %}
+<div class="row scholor_banner_main">
+	<div class="col-md-12">
+      <div class="row">
+			<div class="col-md-12">
+              <div class="QS_scholor_tag">
+             {{ section.settings.tag | escape }}
+                <img class="QS_circle" src="https://cdn.shopify.com/s/files/1/0346/0438/4395/files/scholar-icon.png?v=1588592096" />
+              </div>
+            </div>
+      </div>
+      
+		<div class="row QS_scholor_heading_row center">
+			<div class="col-md-12 QS_scholor_heading">
+              <h2 style="font-weight: 600">{{ section.settings.heading | escape }}</h2>
+      		</div>
+    	   
+         </div>
+      	<div class="row QS_scholor_subheading_row center">
+			<div class="col-md-12 QS_scholor_subheading">
+              <h4>{{ section.settings.subheading | escape }}</h4>
+      		</div>
+    	   
+            
+        </div>
+      	<div class="row  QS_Btn_row">
+			<div class="col-md-12">
+              <div class="QS_Enroll_btn">
+                <a class="QS_btn_link" href="{{ section.settings.button_link | escape }}"><strong>{{ section.settings.button_label | escape }}</strong></a>
+              </div>                       
+          	</div>
+      	</div>      
+    </div>
+</div>
+<style>
+  
+  .QS_circle
+  {
+    width: 70px;
+    height: 70px;
+    margin-top: -27px;
+    margin-right: -50px;
+    float: right;
+    
+  }
+  .QS_scholor_tag
+  {
+    padding: 10px;
+    width: 330px;
+    border: green;
+    text-align: center;
+    font-size: 14px;
+    margin: auto;
+    border: solid 2px #378454;
+    font-family: 'Proxima Nova Lt';
+}
+ 
+ 
+  .QS_scholor_heading_row
+  {
+     padding:10px;
+    max-width: 700px;
+  }
+ .QS_scholor_subheading_row
+  {
+   padding:10px; 
+    max-width: 840px;
+    
+  }
+  .QS_Enroll_btn {
+    background-image: linear-gradient(#f59517,#f1b52b);
+    color:#fff;
+    transition-duration: 0.3s;
+  }
+  
+  	.QS_Enroll_btn:hover {
+		transform: translateY(-4px);
+		transition-duration: 0.3s;
+	}
+  
+  #MainContent {
+   padding:0 !important; 
+  }
+  
+  .QS_scholor_heading   {
+    text-align: center;
+  }
+  
+  .QS_scholor_subheading  {
+    text-align:center;
+  }
+  
+  #shopify-section-QS_Scholor_banner   { 
+    background-image:url({{section_image}});
+ 	background-size: cover;
+    color: #fff;
+    padding-top: 73px;
+    padding-bottom: 130px;
+  }
+  .QS_Enroll_btn
+  {
+   	background-color: #f2aa2e;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    width: 100%; 
+    margin:auto;
+    height: 50px;
+    max-width: 540px;
+  }
+  .QS_btn_link
+  {
+    width: 100%;
+    display: block;
+    height: 100%;
+    margin: auto;
+    padding: 10px; 
+    color:#fff;
+    
+  }
+  a.QS_btn_link:hover {
+  	color: #fff;
+  }
+  .QS_Btn_row
+  {
+   padding:30px; 
+  }
+</style>
+{% schema %}
+  {
+    "name": "Banner Section",
+    "settings": [
+ {
+          "type": "image_picker",
+          "id": "bannerimage",
+          "label": {
+           
+            "en": "Banner Image"
+           
+          }
+        },
+    {
+          "type": "text",
+          "id": "tag",
+          "label": {
+                   "en": "Tag"
+              },
+          "default": {
+                   "en": "$500 AWARD FOR VETERINARY STUDENTS"
+              }
+        },
+		{
+          "type": "text",
+          "id": "heading",
+          "label": {
+                   "en": "Heading"
+              },
+          "default": {
+                   "en": "Veterinary Naturals Announces its Yearly Scholarship Program"
+              }
+        },
+		{
+          "type": "text",
+          "id": "subheading",
+          "label": {
+                   "en": "Sub Heading"
+              },
+          "default": {
+                   "en": "The animal lovers at Vetnaturals are excited to announce their yearly scholorship program for up-and-coming veterinary students. We want this $500 award to go to a dedicated student who loves animals and wants to keep them happy and healthy." 
+              }
+        },
+ 		{
+          "type": "text",
+          "id": "button_label",
+          "label": {
+         
+            "en": "Button label"
+         
+          },
+		 "default": {
+                   "en": "Apply For The Scholorship Now" 
+              }
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": {
+           
+            "en": "Button link"
+           
+          }
+        }
+
+]
+  }
+{% endschema %}
+
+
+

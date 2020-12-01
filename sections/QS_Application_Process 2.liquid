@@ -1,0 +1,161 @@
+
+<div class="page-width QS_application_row">
+        <div class="row QS_elegibility_row">
+            <div class="col-md-12">
+                <div class="row QS_elegibility_section">
+                    <div class="col-md-12 QS_elegibility_section_head">
+                      <h3 class="bold">{{ section.settings.heading | escape }}</h3>
+                  	</div>
+                    <div class="col-md-12">
+                      <h4>{{ section.settings.subheading  }}</h4>   	
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 QS_sec_margin">
+                <div class="row QS_elegibility_section_points">
+                    <div class="col-md-12 QS_elegibility_section_points_line">
+                      {{ section.settings.description  }}
+                      </div>
+                  
+    
+                  <a style=" margin: auto; width: 100%; max-width: 540px;" href="{{ section.settings.button_link }}"><div class="col-md-12 back_to_top_btn"><strong>{{ section.settings.button_label | escape }}</strong></div>
+                  </a>
+  
+                </div>
+            </div>
+        </div>
+</div>
+<style>
+    .tick_text {
+      	font-size: 22px;
+      	font-family: 'Proxima Nova Rg'; 
+    }
+  	@media (max-width: 414px) {
+  		.tick_text {
+      		font-size: 16px;
+    	}
+  	}
+    .QS_elegibility_section_head {
+      	margin-bottom: 0px;
+    }
+    .QS_sec_margin {
+     	margin-top:30px; 
+    }
+    .back_to_top_btn {
+      	display: flex;
+      	background-image: linear-gradient(#f59517,#f1b52b);
+      	text-align: center;
+      	margin: auto;
+      	padding: 15px;
+      	color: #fff;
+      	justify-content: center;
+      	/* margin: 15px; */
+      	border-radius: 9px; 
+      	font-size:16px;
+      	transition-duration: 0.3s;
+    }
+  	.back_to_top_btn:hover {
+		transform: translateY(-4px);
+		transition-duration: 0.3s;
+	}
+    .QS_btn_space {
+      	padding:40px; 
+    }
+    .QS_app_tick {
+      	color:#4ebe00;
+      	width:38px; 
+    }
+    .QS_elegibility_section_points li {
+      	padding:20px 0; 
+      	display:flex;
+    } 
+    .QS_elegibility_section_points {
+      	padding: 30px;
+      	background:#303030;
+      	width: 100%;
+      	margin:auto;
+      	color:#fff;
+      	text-align:left;
+      	max-width: 800px;
+    }
+
+	.QS_application_row {
+    	text-align:center;
+  	}
+  
+	.QS_elegibility_section {
+   		width: 100%;
+    	margin:auto;
+		max-width: 650px;
+  	}
+  #shopify-section-QS_Application_Process {
+  	    background-image: url(https://cdn.shopify.com/s/files/1/0346/0438/4395/files/application-check-cover.jpg?v=1588596774);
+    	background-position: bottom right;
+    	background-repeat: no-repeat;
+    	background-size: 700px;
+        padding-top: 40px;
+		padding-bottom: 50px;
+    	background-color: #f6f6f6;
+  }
+</style>
+
+
+{% schema %}
+  {
+    "name": "Application Process",
+    "settings": [
+ 	{
+          "type": "text",
+          "id": "heading",
+          "label": {
+                   "en": "Heading"
+              },
+          "default": {
+                   "en": "Application Process - How To Apply"
+              }
+        },
+		{
+          "type": "text",
+          "id": "subheading",
+          "label": {
+                   "en": "Sub Heading"
+              },
+          "default": {
+"en": "Because we're looking for the widest entrant pool, we've made our application process as straightforward and easy as possible.<strong>Here's how to apply </strong>" 
+              }
+        },
+
+		{
+          "type": "textarea",
+          "id": "description",
+          "label": {
+                   "en": "Description"
+              }
+          
+        },
+ 		{
+          "type": "text",
+          "id": "button_label",
+          "label": {
+         
+            "en": "Button label"
+         
+          },
+		 "default": {
+                   "en": "Apply For The Scholorship Now" 
+              }
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": {
+           
+            "en": "Button link"
+           
+          }
+        }
+
+]
+  }
+{% endschema %}
+

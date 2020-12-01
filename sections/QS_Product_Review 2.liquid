@@ -1,0 +1,201 @@
+
+<!--
+<div class="lt-block-reviews"> 
+	<ryviu-widget  
+	    handle="{{product.handle}}"
+            product_id="{{product.id}}"
+	    title_product="{{product.title}}"
+	    total_meta="{{ product.metafields.ryviu.r_count }}"
+		image_product="{{ product.featured_image.src | img_url: '100x' }}"></ryviu-widget>
+</div>
+
+
+-->
+
+<!--
+
+<div class="container QS_container">
+  <div class="row QS_heading_row">
+      <div class="col-md-12 QS_review_heading">Customer Reviews</div>
+  </div>
+    <div class="row">
+  	<div class="col-md-4">
+      <div class="Rating_num">
+        <div class="row">
+  			<div class="col-md-12">
+        		<div class="Rating_score">3.7<sup  class="Rating_outof">/5</sup></div>
+              	<div class="star_sign">
+                  <i class="fa fa-star" aria-hidden="true"></i>&nbsp;
+                  <i class="fa fa-star" aria-hidden="true"></i>&nbsp;
+                  <i class="fa fa-star" aria-hidden="true"></i>&nbsp;
+                  <i class="fa fa-star-half-o" aria-hidden="true"></i>&nbsp;
+                  <i class="fa fa-star-o" aria-hidden="true"></i>
+               </div>
+          	</div>
+          	<div class="col-md-12 total_review_count">
+            	From 42 reviews
+          	</div>
+        </div>
+      </div>
+    </div>
+   <div class="col-md-4">
+     <div class="Rating_bar">
+        <div class="row">
+  			<div class="col-md-12">
+              <div class="QS_bar">
+                <div class="QS_bar_counter_num">5</div><div class="QS_Bar_counter_star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="background-color:#f1c61b; width:60%">
+              <span class="sr-only"></span>
+          </div>        
+		</div> <div class="bar_counter">27</div>
+              </div>
+              <div class="QS_bar">
+                <div class="QS_bar_counter_num">4</div><div class="QS_Bar_counter_star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="background-color:#f1c61b; width:2%">
+              <span class="sr-only"></span>
+          </div>        
+		</div> <div class="bar_counter"><div class="QS_bar_counter_num">1</div></div>
+                <div class="QS_bar">
+                  <div class="QS_bar_counter_num">3</div><div class="QS_Bar_counter_star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="background-color:#f1c61b; width:2%">
+              <span class="sr-only"></span>
+          </div>        
+		</div> <div class="bar_counter">1</div></div>
+                  <div class="QS_bar">
+                    <div class="QS_bar_counter_num">2</div><div class="QS_Bar_counter_star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="4" aria-valuemin="0" aria-valuemax="100" style="background-color:#f1c61b; width:4%">
+              <span class="sr-only"></span>
+          </div>        
+		</div> <div class="bar_counter">
+                    <div class="QS_bar_counter_num">2</div></div>
+              </div>
+           <div class="QS_bar">
+             <div class="QS_bar_counter_num">1</div><div class="QS_Bar_counter_star"><i class="fa fa-star" aria-hidden="true"></i></div><div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100" style="background-color:#f1c61b; width:22%">
+              <span class="sr-only"></span>
+          </div>        
+		</div> <div class="bar_counter">11</div>
+              </div>
+              
+     	 </div>
+  		</div>
+		</div>
+     </div>
+  </div>
+      <div class="col-md-4 QS_write_review_sec">
+        <div class="row" style="text-align:center;">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+           
+            <a href="#"><div class="review_btn">Write A Review</div></a>
+          </div>
+           <div class="col-md-3"></div>
+        </div>
+      </div>
+      
+      
+</div>
+
+
+
+<style>
+  .QS_container
+  {
+   padding-top:60px; 
+  }
+  .QS_heading_row
+  {
+   border-bottom: solid 2px #cecece;
+    padding-bottom: 12px;
+
+  }
+  .QS_review_heading
+  {
+   font-size:18px;
+    
+  }
+ .Rating_score {
+    font-size: 78px;
+    font-weight: 400;
+    color: #f1c61b;
+    width: 160px;
+    padding-right: 0;
+    margin: 0;
+    display: inline;
+}
+  .Rating_outof
+  {
+    color: #cecece;
+    font-size: 28px;
+  }
+  .stars-outer {
+  display: inline-block;
+  position: relative;
+  font-family: FontAwesome;
+}
+  .star_sign
+  { position: absolute;
+    bottom: 0;
+    display:flex;
+  }
+.star_sign .fa
+  {
+   color: #f1c61b;
+    font-size: 20px;
+  }
+
+.total_review_count
+  {
+   font-size:14px; 
+  }
+  .Rating_bar
+  {
+   padding-top:32px; 
+  }
+  .Rating_bar .fa
+  {
+   display: contents;
+    font-size: 20px;
+    color:#9c9c9c;
+  }
+  .progress
+  {
+   width:70%;
+  
+    display: inline-block;
+ 
+    margin: auto;
+  }
+.bar_counter {
+    border: solid 1px #ededed;
+    border-radius: 14px;
+    width: 54px;
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+}
+  .QS_bar_counter_num
+  {
+   display:inline-block; 
+        width: 15px;
+  }
+  .QS_Bar_counter_star
+  {
+    width: 29px;
+    display:inline-block;
+  }
+  .QS_write_review_sec
+  {
+   margin:auto; 
+  }
+  .review_btn
+  {
+   	    padding: 10px;
+    background: #373737;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+
+  }
+</style>
+-->

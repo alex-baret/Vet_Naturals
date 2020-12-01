@@ -1,0 +1,142 @@
+{% assign section_image = section.settings.image| img_url: '800x' %}
+    <div class="page-width">
+      <div class="row">
+  		<div class="col-md-6 QS_ambassasdor_image">
+            
+        </div>
+        <div class="col-md-6">
+           <div class="row QS_ambassador_section_points"> 
+              <div class="col-md-12">
+                <h2 class="bold">{{section.settings.heading}}</h2>
+             </div>
+             
+           <div class="col-md-12 QS_ambassador_section_points_line">
+             	<h4>{{section.settings.description}}</h4>
+          
+          </div> 
+          
+             <a href="{{section.settings.button_link}}" style="width: 100%;">  
+               <div class="col-md-12 ambassador_apply_now">{{section.settings.button_label}}</div></a>
+          
+          </div>
+        </div>
+      </div>
+    </div> 
+<style>
+  .QS_ambassasdor_image
+  {
+    background-image: url({{section_image}});
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 400px;
+    
+  }
+  .ambassador_apply_now
+  {
+    
+  display: flex;
+    background: linear-gradient(#f59517,#f1b52b);
+    text-align: center;
+    margin: auto;
+    padding: 15px;
+    color: #fff;
+    justify-content: center;
+    /* margin: 15px; */
+    border-radius: 9px; 
+    font-size:16px;
+ 
+  }
+    
+  .QS_app_tick
+  {
+    color:#4ebe00;
+    width:38px; 
+  }
+  
+  .QS_ambassador_section_points li {
+   	padding:10px 0;  
+   	display:flex;
+    font-size:18px;
+  } 
+  
+  .QS_ambassador_section_points {
+    padding:20px;
+  	
+    text-align:left;
+  }
+  
+  .QS_ambassador_section_points_line {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  #shopify-section-page-about-points {
+  	padding-top: 90px;
+    padding-bottom: 80px;
+    background: url(https://cdn.shopify.com/s/files/1/0346/0438/4395/files/dogprintsbg.jpg?v=1588791114);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-size: 225px;
+  }
+
+
+</style>
+
+
+{% schema %}
+  {
+    "name": "About Points",
+    "settings": [
+ {
+          "type": "image_picker",
+          "id": "image",
+          "label": {
+           
+            "en": "Banner Image"
+           
+          }
+        },
+    {
+          "type": "text",
+          "id": "heading",
+          "label": {
+                   "en": "Tag"
+              },
+          "default": {
+                   "en": "Title here"
+              }
+        },
+		{
+          "type": "textarea",
+          "id": "description",
+          "label": {
+                   "en": "Description"
+              }
+          
+        },
+		
+ 		{
+          "type": "text",
+          "id": "button_label",
+          "label": {
+         
+            "en": "Button label"
+         
+          },
+		 "default": {
+                   "en": "Title" 
+              }
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": {
+           
+            "en": "Button link"
+           
+          }
+        }
+
+]
+  }
+{% endschema %}

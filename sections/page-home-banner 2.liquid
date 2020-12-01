@@ -1,0 +1,210 @@
+<!-- For Background Section Image -->
+{% assign section_image = section.settings.image| img_url: '800x' %}
+{% assign section_image2 = section.settings.image2| img_url: '800x' %}
+{% assign section_image3 = section.settings.image3| img_url: '800x' %}
+{% assign section_image4 = section.settings.image4| img_url: '800x' %}
+{% assign section_image5 = section.settings.image5| img_url: '800x' %}
+
+<!-- Begin Section -->
+<div class="banner-home-bg" style="background-image: url({{section_image}});">
+<div class="page-width home-title-mobile">
+    <div class="col-md-6 col-sm-12">
+        <h1 class="blue">{{section.settings.heading}}</h1>
+        <div style="margin-top: 20px; margin-bottom: 30px; max-width: 460px;">
+            {{section.settings.description}}
+        </div>
+
+        <button class="button-yellow">
+            <a href="{{section.settings.button_link}}">{{section.settings.button_label}}<img src="https://cdn.shopify.com/s/files/1/0346/0438/4395/files/all-button-icon.png?v=1590437865" class="button-yellow-next" /></a>
+        </button>
+
+        <img src="{{section_image2}}" class="as-seen-img" />
+
+        <p class="solutions-text">{{section.settings.solutions}}</p>
+
+        <div class="row solution-container solution-center">
+            
+                <div class="box-1">
+                    <a href="{{section.settings.button_link2}}">
+                        <img src="{{section_image3}}" class="dog-img"><p>{{section.settings.solutions1}}</p>
+                    </a>
+                </div>
+                   
+                <div class="box-2">
+                    <a href="{{section.settings.button_link3}}">
+                        <img src="{{section_image4}}" class="dog-img"><p>{{section.settings.solutions2}}</p>
+                     </a>
+                </div>
+           
+                <div class="box-3">
+                    <a href="{{section.settings.button_link4}}">
+                        <img src="{{section_image5}}" class="dog-img"><p>{{section.settings.solutions3}}</p>
+                    </a>
+                </div>
+            
+        </div>
+    </div>
+    <div class="col-md-6 col-sm-12">
+    </div>
+</div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Vet Naturals Home Banner",
+    "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": {
+           
+            "en": "Background Image"
+           
+          }
+        },
+        {
+          "type": "textarea",
+          "id": "heading",
+          "label": {
+                   "en": "Heading"
+              },
+          "default": {
+                   "en": "Developed By Vets, Approved By Pets®"
+              }
+        },
+		{
+          "type": "textarea",
+          "id": "description",
+          "label": {
+                   "en": "Subheading"
+              }
+          
+        },
+ 		{
+          "type": "text",
+          "id": "button_label",
+          "label": {
+         
+            "en": "Button label"
+         
+          },
+		 "default": {
+                   "en": "View All VetNaturals Products" 
+              }
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": {
+           
+            "en": "Button link"
+           
+          }
+        },
+        {
+          "type": "image_picker",
+          "id": "image2",
+          "label": {
+           
+            "en": "Image"
+           
+          }
+        },
+        {
+          "type": "textarea",
+          "id": "solutions",
+          "label": {
+                   "en": "Heading"
+              }
+          
+        },
+        {
+          "type": "image_picker",
+          "id": "image3",
+          "label": {
+           
+            "en": "Image"
+           
+          }
+        },
+        {
+          "type": "textarea",
+          "id": "solutions1",
+          "label": {
+                   "en": "Heading"
+              }
+          
+        },
+        {
+          "type": "url",
+          "id": "button_link2",
+          "label": {
+           
+            "en": "Button link"
+           
+          }
+        },
+        {
+          "type": "image_picker",
+          "id": "image4",
+          "label": {
+           
+            "en": "Image"
+           
+          }
+        },
+        {
+          "type": "textarea",
+          "id": "solutions2",
+          "label": {
+                   "en": "Heading"
+              }
+          
+        },
+        {
+          "type": "url",
+          "id": "button_link3",
+          "label": {
+           
+            "en": "Button link"
+           
+          }
+        },
+        {
+          "type": "image_picker",
+          "id": "image5",
+          "label": {
+           
+            "en": "Image"
+           
+          }
+        },
+        {
+          "type": "textarea",
+          "id": "solutions3",
+          "label": {
+                   "en": "Heading"
+              }
+          
+        },
+        {
+          "type": "url",
+          "id": "button_link4",
+          "label": {
+           
+            "en": "Button link"
+           
+          }
+        }
+
+    ]
+    ,
+    "presets": [
+        {
+        "name": "Vet Naturals Home Banner",
+        "category": "VetNaturals"
+        }
+    ]
+  }
+{% endschema %}

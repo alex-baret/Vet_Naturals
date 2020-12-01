@@ -1,0 +1,134 @@
+<div id="myModal" class="modal singlemmodal fade"  tabindex="-1" role="dialog" style="display:block; opacity:1" >
+  
+  <!-- Modal content -->
+  <div class="modal-content">
+     <div class="modal-header">
+           <h4 class="modal-title" id="exampleModalLabel">
+             Thank you For choosing <strong>"Advance Joint Relief"</strong>
+       		</h4>
+        <button type="button" class="close singleclose" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+     </div>
+     <div class="modal-body">
+       <div class="row" >
+       	<div class="col-md-4" style="text-align:center;">
+          <img src="https://cdn.shopify.com/s/files/1/0346/0438/4395/files/product-1.png?v=1587748592"/>
+         </div>
+         <div class="col-md-8" style="padding-top: 25px;">
+          	Our customers have found that this product works best in combination with our Hemp & Hips Formula. 
+        	<strong> We'd like to offer you a 54% discount on your first bottle!
+           	</strong>
+         </div>
+         
+         <div class="col-md-12 price_tag_line">That's a huge discount of $28.52</div>
+           <div class="col-md-12">
+         		<div class="QS_add_to_cart">Yes Add To My Cart for just $12.58</div>
+         	</div>
+         
+          <div class="col-md-12 nothanks_line">No Thanks, take Me Back To The Store</div>
+         
+    </div>
+  
+ 
+  </div> 
+
+</div></div>
+<style>
+  .announcement-bar
+  {
+   z-index:0 !important; 
+  }
+  .nothanks_line
+  {
+    padding:10px;
+    font-size:12px;
+    text-align:center;
+    font-weight:600;
+  }
+  .price_tag_line
+  {
+    font-weight:600;
+    padding:10px;
+   font-size:12px;
+    text-align:center;
+    color:#f59517;
+  }
+   .QS_add_to_cart
+  {
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    cursor: pointer;
+    padding: 13px;
+    background: linear-gradient(#f59517,#f1b52b);
+    color: #fff;
+    border-radius: 4px;
+    font-size:15px;
+  }
+  .modal-header{
+       
+   text-align:center; 
+    background:#dfd9cb;
+    padding: 31px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  .modal-header h4{
+   margin: auto;
+	}
+  /* The Modal (background) */
+.modal {
+  //display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+ 
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 9% auto; /* 15% from the top and centered */
+  border-radius: 8px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+
+ <script>
+$(document).ready(function(){
+   // $("#myBtn").click(function(){ 
+       //$("#myModal").modal("show");
+       $(".singlemmodal").css("display","block !important");
+       $(".singlemmodal").css("opacity","1 !important");
+   // });
+  $(".singleclose").click(function(){
+  $('.singlemmodal').css('display','none'); 
+ 
+  });
+});
+</script>
+
+
