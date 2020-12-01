@@ -7575,6 +7575,9 @@ $('.qtybox .btnqty').on('click', function(){
 }); 
 
 
+
+
+
 // ----- Samples Form Function ------- // 
 theme.Survey = (function() {
   var stepCount = 1;
@@ -7613,6 +7616,7 @@ theme.Survey = (function() {
   });
 
   function init() {
+    alert("Hello from init");
     this.$advanceStepButton = $(selectors.advanceStepButton);
 
     if (!this.$advanceStepButton) return;
@@ -7648,6 +7652,7 @@ theme.Survey = (function() {
       var $inputs = $parent.find('input, select');
       var valid = false;
       $inputs.on('change keypress keyup blur', function() {
+        alert("Hello from keypress");
         $inputs.each(function(){
           var validation = $(this)[0].checkValidity()
           if (validation) {
