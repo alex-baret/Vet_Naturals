@@ -104,12 +104,14 @@
   {%- if request.page_type contains 'customers/' -%}
     <script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer="defer"></script>
   {%- endif -%}
+  
+  <script src="{{ 'klaviyo_subscribe.js' | asset_url }}"></script>
 
   <script src="{{ 'lazysizes.js' | asset_url }}" async="async"></script>
   <script src="{{ 'vendor.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
 
-  {% render 'header-scripts.zipifypages', renderctx: 'thm' %}{{ content_for_header }}
+  {{ content_for_header }}
 	  
 <!-- RYVIU APP :: Settings global -->	
     <script>
@@ -119,9 +121,7 @@
 
   {% include "manychat-header" %}
 
-  <script src="https://www.dwin1.com/19038.js" type="text/javascript" defer="defer"></script>
-
-  
+ {% include 'cevoid_core' %}
 </head>
 
 <body class="template-{{ request.page_type | handle }}">
@@ -166,10 +166,7 @@
 
 
 
-
-
-
 {% render 'ocuapp-theme', ocuapp: ocuapp %}
 {% assign ocuapp = true %}
-{% render 'page-footer.zipifypages', renderctx: 'thm', ocuapp: ocuapp %}</body>
+</body>
 </html>

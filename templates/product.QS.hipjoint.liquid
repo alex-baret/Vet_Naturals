@@ -1,7 +1,26 @@
-{% include 'product-content.zipifypages', contentprt: 'header' %}{% comment %}
+{% comment %}
   The contents of the product.liquid template can be found in /sections/product-template.liquid
 	This template is set to display metafields associated with Hip and Joint product.
 {% endcomment %}
+
+{%comment%}==== Black Friday/Holiday Banner 
+
+<div class='bf-row'>
+    <div class='bf-column'>
+      <div class='bf-left-column'>
+      </div>
+    </div>
+    <div class='bf-column'>
+      <div class='bf-right-column'>
+        <h3 class="bf-header-1">Hello Savings!</h3>
+        <h4 class="bf-details">Until Christmas recieve 20% off your entire cart!</h4>
+      </div>
+    </div>
+  </div>
+
+
+ Rest of the Product Page Below ========{%endcomment%}
+
 
 {% section 'QS_product_template' %}
 {% section 'QS_Product_made_by_Vets' %}
@@ -129,4 +148,4 @@ span.price-item.price-item--sale {
 s.price-item.price-item--regular {
     color: #fff;
 }
-</style>{% include 'product-content.zipifypages', contentprt: 'footer' %}
+</style>

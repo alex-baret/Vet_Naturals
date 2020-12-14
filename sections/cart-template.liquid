@@ -273,8 +273,19 @@
                   class="cart__submit btn btn--secondary button-yellow"
                   value="{{ 'cart.general.update' | t }}">
                 {%- endunless -%}
-                <input type="submit" name="checkout"
-                  class="button-yellow"
+
+      {% assign has_subscriptions = false %}
+      {% for i in cart.items %}
+      {% for p in i.properties %}
+      {% if p.first == 'shipping_interval_frequency' %}
+      {% assign has_subscriptions = true %}
+      {% endif %}
+      {% endfor %}
+      {% endfor %}
+                
+                <input 
+         {% if has_subscriptions %}type="button"{% else %}type="submit" name="checkout"{% endif %} 
+                  class="checkout_button button-yellow"
                   value="{{ 'cart.general.checkout' | t }}">
                 
                 {% if additional_checkout_buttons %}

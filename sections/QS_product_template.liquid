@@ -32,13 +32,6 @@
       {%- assign height = 1090 -%}
       {%- assign enable_image_zoom = false -%}
   {% endcase %}
-  <div class="row mb-3">
-  	<div class="col-12">
-      <a href="https://vetnaturals.com/collections/all-products-minus-upsells-downsells">
-        <p class="back-store"><img src="https://cdn.shopify.com/s/files/1/0346/0438/4395/files/left-arrow.svg?v=1597253919" width="5px" style="margin-right: 10px;"/> BACK TO STORE </p>
-      </a>
-    </div>  
-  </div>
   <div class="grid product-single{% if section.settings.enable_payment_button %} product-single--{{ section.settings.media_size }}-media{% endif %}">
     <div class="grid__item product-single__media-group {{ product_media_width }}{% if section.settings.media_size == 'full' %} product-single__media-group--full{% endif %}" data-product-single-media-group>
       {%- assign featured_media = product.selected_or_first_available_variant.featured_media | default: product.featured_media -%}
@@ -155,7 +148,7 @@
       
         <div class="row">
         	<div class="col-12">
-          		<h1 class="product-title">{{ product.title }}</h1>
+          		<h1>{{ product.title }}</h1>
             </div>
         </div>
 		<div class="row d-none d-sm-block">
@@ -170,6 +163,9 @@
             {%- if current_variant.available == false %} product-form--variant-sold-out {%- endif -%}
           {%- endcapture %}
          {% form 'product', product, data-productid: product.id, class:form_classes, novalidate: 'novalidate', data-product-form: '' %}
+<!-- Begin ReCharge code -->
+{% if product.available %}{% include 'subscription-product' %}{% endif %}
+<!-- End ReCharge code -->
 
             {% unless product.has_only_default_variant %}
             {% for option in product.options_with_values %}
@@ -190,32 +186,6 @@
                </div>
         	</div>
         {% endfor %}
-        <div class="row">
-          {% if section.settings.show_quantity_selector %}
-              <div class="col-md-3">
-                  <label for="Quantity" class="quantity-selector">Quantity</label>
-              </div>
-              <div class="col-md-9">
-                	<div class="quantity-vet qtybox">
-                      <span class="btnqty qtyminus icon icon-minus">-</span>
-                      <input type="text" id="quantity" name="quantity" value="1" min="1" max="15" class="quantity-selector quantity-input-vet" readonly="">
-                      <span class="btnqty qtyplus icon icon-plus">+</span>
-                	</div>
-              </div>
-          {% endif %}
-        </div>
-        <!-- Begin ReCharge code -->
-		{% if product.available %}
-        <div class="row select_row">
-             <div class="col-md-3">
-               <p class="frequency-text">Frequency</p>
-             </div>
-                <div class="col-md-9">
-                    {% include 'subscription-product' %}
-               </div>
-        </div>
-        {% endif %}
-		<!-- End ReCharge code -->
         {% endunless %}
           <div class="row select_row">
               <div class="col-12">
@@ -230,6 +200,18 @@
                 </select>
               </div>
             </div>
+			 <div class="row">
+            	<div class="col-12">
+                  	{% if section.settings.show_quantity_selector %}
+                    <div class="product-form__controls-group">
+                      <div class="product-form__item">
+                        <label for="Quantity-{{ section.id }}">{{ 'products.product.quantity' | t }}</label>
+                     	<input type="number" id="Quantity-{{ section.id }}" name="quantity" value="1" min="1" pattern="[0-9]*" class="product-form__input product-form__input--quantity" data-quantity-input                         >
+                      </div>
+                    </div>
+                  {% endif %}
+                </div>
+        	</div>
          <div class="row"> 
           <div class="col-12" style="padding-bottom:10px; text-align:center; color:#f1a93d; font-weight:600; font-size:14px;">
                 

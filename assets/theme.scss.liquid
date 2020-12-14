@@ -963,6 +963,7 @@ button:-moz-focusring,
 
 input {
   &[type="search"],
+  &[type="number"],
   &[type="email"],
   &[type="password"] {
     -webkit-appearance: none;
@@ -8774,40 +8775,53 @@ button {
   	transition-duration: 0.3s;
 }
 
-.button-yellow:hover {
-	transform: translateY(-4px);
-	transition-duration: 0.3s;
+.button {
+  @extend button;
+  display: inline-block;
+  text-align: center;
+  line-height: 58px;
 }
 
-.button-yellow { 
-  	background-image: linear-gradient(#f19f3f, #efb83c); 
-  	border-radius: 6px; 
-  	height: 58px; 
-  	color:#fff; 
-  	width: 100%; 
-  	max-width: 410px; 
-  	border: 0px;
-  	font-family: 'Proxima Nova Lt';
-	text-shadow: 0px 2px #55555533;
-  	margin-right: 15px; 
+.button-yellow:hover:not([disabled]),
+a.button-yellow:hover:not([disabled]) {
+	transform: translateY(-4px);
+  transition-duration: 0.3s;
+  color: #fff;
+}
+
+.button-yellow,
+a.button-yellow { 
+  background-image: linear-gradient(#f19f3f, #efb83c); 
+  border-radius: 6px; 
+  height: 58px; 
+  color: #fff; 
+  width: 100%; 
+  max-width: 410px; 
+  border: 0px;
+  font-family: 'Proxima Nova Lt';
+  text-shadow: 0px 2px #55555533;
+  margin-right: 15px; 
   margin-left: 15px
 }
 
 .button-yellow a, .button-yellow a:hover{
 	color: #ffffff;
-  	font-family: 'Proxima Nova Lt';
-  	text-shadow: 0px 2px #55555533;
+  font-family: 'Proxima Nova Lt';
+  text-shadow: 0px 2px #55555533;
 }
 
 .button-yellow-next {
 	width: 10px;
-  	height: auto;
-  	margin-left: 5px;
+  height: auto;
+  margin-left: 5px;
+}
+
+.button-yellow:disabled {
+  opacity: 0.5;
 }
 
 .page-width {
-
-  	max-width: 1440px;
+  max-width: 1440px;
 }
 
 @media (min-width: 1200px) {
@@ -9665,11 +9679,6 @@ li.product-single__thumbnails-item.product-single__thumbnails-item--medium.js {
 .areviews_header_rating span {
 	margin-top: 20px;
 }
-div.rc_block__type {
-  padding-top: 10px !important;
-  padding-left: 18px !important;
-  padding-bottom: 10px !important;
-}
 
 /*Recharge Payment Edit*/
 div.rc_block__type--active {
@@ -9678,43 +9687,6 @@ div.rc_block__type--active {
 	box-shadow: 2px 4px 7px 3px #f2f2f2;
 	border: solid 1px #f2f2f2;
 }
-.frequency-text {
-    color: #565656;
-    font-family: 'Proxima Nova Lt';
-    font-size: 17px;
-    margin-top: 17px;
-}
-
-h1.product-title {
-	color: #3b3b3b;
-  	font-size: 42px;
-  	font-weight: 600;
-}
-
-.back-store {
-	font-size: 12px;
-  	font-family: 'Proxima Nova Lt';
-  	color: #7f7f7f;
-  	letter-spacing: 2px;
-}
-
-.quantity-vet > .product-form__input--quantity {
-    max-width: 100%;
-    border-radius: 8px;
-    box-shadow: 2px 4px 7px 3px #f2f2f2;
-    border: solid 1px #f2f2f2;
-    height: 62px;
-}
-
-.quantity-vet {
-    max-width: 100%;
-    border-radius: 8px;
-    box-shadow: 2px 4px 7px 3px #f2f2f2;
-    border: solid 1px #f2f2f2;
-    height: 62px;
-  	padding: 8px;
-}
-
 
 /*====================================*/
 /* Collection Page */
@@ -9740,14 +9712,294 @@ display: none;
 
 // ----- Custom CSS ------ // 
 .single_description{
-padding-left: 10px; 
+  padding-left: 10px; 
   padding-right: 10px;
   padding-bottom: 10px;
 }
 
-//.qtydiv label{display: block;margin-bottom: 12px;letter-spacing: 2.8px;color: #747a7b;}
-.btnqty{display: inline-block;cursor: pointer;user-select: none;font-size: 25px;padding: 5px;line-height: 5px;}
-.btnqty.qtyminus{width: 15%;}
-.btnqty.qtyplus{ width: 15%; text-align: right;}
-.quantity-input-vet {border: none;border: none;padding: 8px;text-align: center;width: 67%;outline: none;display: inline-block;}
-//.qtydiv {display: inline-block;padding-right: 15px;padding-top: 10px;}
+/*====================================*/
+/* Samples Page */
+/*====================================*/
+ 
+.survey {
+  margin: 0 0 100px;
+  @media (max-width: 749px) {
+    margin: 0 0 50px;
+  }
+  .fieldset {
+    margin: 50px 0;
+    padding: 0;
+  }
+  .fieldset + .fieldset {
+    margin-top: 0;
+  }
+  .button-yellow {
+    margin: 0;
+  }
+}
+
+.survey-message {
+  display: none;
+  &.show {
+    display: block;
+  }
+}
+
+.survey-message--pre {
+  background-size: 100%;
+  @extend .banner-home-bg;
+  background-position: right center;
+  
+  @media (max-width: 1245px) {
+    padding-top: 90px;
+  }
+  @media (max-width: 749px) {
+    background-size: 150%;
+    background-position: right top;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    .home-title-mobile {
+      margin-top: 70%;
+    }
+  }
+  @media (max-width: 660px) {
+    padding-bottom: 50px;
+  }
+  @media (max-width: 580px) {
+    padding-bottom: 50px;
+  }
+  @media (max-width: 414px) {
+    padding-bottom: 50px;
+  }
+}
+.survey-message--post {
+  @extend .banner-home-bg;
+  background-position: top left;
+  background-size: 90%;
+  
+  @media (max-width: 1245px) {
+    // background-position: 0px;
+    padding-top: 90px;
+  }
+  @media (max-width: 749px) {
+    background-size: 150%;
+    // background-position: left top;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    .home-title-mobile {
+      margin-top: 90%;
+    }
+  }
+  @media (max-width: 660px) {
+    padding-bottom: 50px;
+  }
+  @media (max-width: 580px) {
+    padding-bottom: 50px;
+  }
+  @media (max-width: 414px) {
+    padding-bottom: 50px;
+  }
+}
+
+.survey__content {
+  max-width: 460px;
+  padding-bottom: 200px;
+  @media (max-width: 749px) {
+    padding-bottom: 100px;
+  }
+  .survey__title:first-line {
+    @extend .blue;
+  }
+}
+
+.survey__form {
+  width: 100%;
+  max-width: 950px;
+  margin: -70px auto 0;
+  background: #fff;
+  box-shadow: 0 0 30px rgba(0,0,0,0.25);
+  border-radius: 20px;
+  padding: 8%;
+  @media (max-width: 749px) {
+    // padding: 80px;
+  }
+}
+
+.stepCounter {
+  margin-bottom: 50px;
+  ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  li {
+    width: 55px;
+    height: 55px;
+    border: 2px solid #ebdcd9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // margin: 0 25px;
+    &.active {
+      background: #f5efef;
+    }
+  }
+}
+
+.card__wrapper {
+  max-width: 415px;
+  margin: 0 auto;
+}
+
+.survey__card {
+  // border: 2px dotted pink;
+  text-align: center;
+  display: none;
+  &.active {
+    display: block;
+  }
+
+  .survey__example {
+    text-align: left;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  select {
+    border: 2px solid #e3e3e3;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .options {
+    input[type="radio"] + label,
+    input[type="checkbox"] + label {
+      margin: 0 20px 10px;
+      min-width: 175px;
+      text-align: center;
+      padding: 5px;
+      border-radius: 20px;
+      border: 2px solid #e6e4e4;
+    }
+
+    input[type="radio"] + label:hover,
+    input[type="radio"]:checked + label,
+    input[type="checkbox"] + label:hover,
+    input[type="checkbox"]:checked + label {
+      background: #f5efef;
+    }
+  }
+  
+  label[for="consent-email"] {
+    font-weight: normal;
+    margin-left: 10px;
+  }
+  
+
+  .important-info {
+    margin-bottom: 0;
+    input:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+  }
+
+  select[multiple] {
+    background-image: unset;
+    // height: 120px;
+  }
+
+}
+
+.whitelist {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+
+/*====================================*/
+/* Holiday Banner Product Page */
+/*====================================*/
+
+.bf-row {
+   background-image: url("https://cdn.shopify.com/s/files/1/0346/0438/4395/files/bf_head_bgrnd_1_copy.png?v=1605639893");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: row-wrap;
+  width: 100%;
+}
+
+.bf-column{
+ 
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.bf-left-column {
+  background-image: url("https://cdn.shopify.com/s/files/1/0346/0438/4395/files/transparent_santa_dog.png?v=1605640428");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: contain; /* Resize the background image to cover the entire container */
+  height: 300px;
+}
+
+.bf-right-column {
+  height: 300px;
+}
+.bf-header-1{
+  padding-top: 10%;
+  text-align: left; 
+  font-weight: 900;
+  color: #2D5F43;
+  letter-spacing: 2px;
+  vertical-align: center;
+  text-transform: uppercase;
+  font-size: 65px;
+
+}
+.bf-details{
+  text-align: left; 
+  font-weight: normal;
+  color: #000000;
+  line-height: normal;
+  vertical-align: center;
+  font-size: 22px;
+
+}
+
+@media (max-width: 400px) {  
+  .bf-header-1 {
+  	 padding-top: 20%;
+    padding-right: 5%;
+  text-align: left; 
+  font-weight: 900;
+  color: #2D5F43;
+  letter-spacing: 1px;
+  vertical-align: center;
+  text-transform: uppercase;
+  font-size: 35px;
+  }
+  .bf-details{
+  text-align: left; 
+  font-weight: normal;
+  color: #000000;
+  line-height: normal;
+  vertical-align: center;
+  font-size: 18px;
+  }
+}

@@ -72,21 +72,21 @@
             "type": "text",
             "settings": {
               "title": "Vet Naturals",
-              "text": "<p><a href=\"\/pages\/scholarship-program\" title=\"Scholarship Program\"><\/a><\/p>\n<p><a href=\"\/pages\/shipping-and-returns\" title=\"Shipping and Returns\">Shipping &amp; Returns<\/a><\/p>\n<p><a href=\"\/pages\/fda-disclaimer\" title=\"FDA Disclaimer\">FDA Disclaimer<\/a><\/p>\n<p><a href=\"\/pages\/terms-conditions\" title=\"Terms &amp; Conditions\">Terms &amp; Conditions<\/a><\/p>\n<p><a href=\"\/pages\/privacy-policy\" title=\"Privacy Policy\">Privacy Policy<\/a><\/p>"
+              "text": "<p><\/p><p><a href=\"\/pages\/shipping-and-returns\" title=\"Shipping and Returns\">Shipping &amp; Returns<\/a><\/p><p><a href=\"\/pages\/fda-disclaimer\" title=\"FDA Disclaimer\">FDA Disclaimer<\/a><\/p><p><a href=\"\/pages\/terms-conditions\" title=\"Terms &amp; Conditions\">Terms &amp; Conditions<\/a><\/p><p><a href=\"\/pages\/privacy-policy\" title=\"Privacy Policy\">Privacy Policy<\/a><\/p>"
             }
           },
           "1586984772724": {
             "type": "text",
             "settings": {
               "title": "Most Popular",
-              "text": "<p><a href=\"\/products\/hip-joint\" title=\"Hip &amp; Joint\">Hip &amp; Joint<\/a><\/p>\n<p><a href=\"\/products\/omega-chews\" title=\"Omega Chews\">Omega Chews<\/a><\/p>\n<p><a href=\"\/products\/immune-allergy-chews\" title=\"Immune &amp; Allergy Chews\">Immune &amp; Allergy Chews<\/a><\/p>\n<p><a href=\"\/products\/hemp-hips\" title=\"Hemp &amp; Hips\">Hemp &amp; Hips<\/a><\/p>"
+              "text": "<p><a href=\"\/products\/hip-joint\" title=\"Hip &amp; Joint\">Hip &amp; Joint<\/a><\/p><p><a href=\"\/products\/omega-chews\" title=\"Omega Chews\">Omega Chews<\/a><\/p><p><a href=\"\/products\/immune-allergy-chews\" title=\"Immune &amp; Allergy Chews\">Immune &amp; Allergy Chews<\/a><\/p><p><a href=\"\/products\/hemp-hips\" title=\"Hemp &amp; Hips\">Hemp &amp; Hips<\/a><\/p>"
             }
           },
           "text": {
             "type": "text",
             "settings": {
               "title": "Contact Us",
-              "text": "<p>Vet Naturals<\/p>\n<p>Service@VetNaturals.com<\/p>\n<p>Toll Free: (855) 417 8598<\/p>"
+              "text": "<p>Vet Naturals<\/p><p>Service@VetNaturals.com<\/p><p>Toll Free: (855) 417 8598<\/p>"
             }
           },
           "1587491465925": {
@@ -123,35 +123,35 @@
           "1587420718791": {
             "type": "html",
             "settings": {
-              "code": "<div class=\"dog-solution-container\">\n<a href=\"https:\/\/vetnaturals.com\/collections\/all-products-minus-upsells-downsells\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/0438\/4395\/files\/dg1.png?v=1587420929\" class=\"dog-solution-img\">\n<p class=\"dog-solution-text\">Stress &amp; Energy Levels<\/p>\n<\/a>\n<\/div>",
+              "code": "<div class=\"dog-solution-container\">\n<a href=\"https:\/\/vetnaturals.com\/collections\/all-products\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/0438\/4395\/files\/dg1.png?v=1587420929\" class=\"dog-solution-img\">\n<p class=\"dog-solution-text\">Stress &amp; Energy Levels<\/p>\n<\/a>\n<\/div>",
               "width": "33%"
             }
           },
           "1587421760036": {
             "type": "html",
             "settings": {
-              "code": "<div class=\"dog-solution-container\">\n<a href=\"https:\/\/vetnaturals.com\/collections\/all-products-minus-upsells-downsells\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/0438\/4395\/files\/dg2.png?v=1587420929\" class=\"dog-solution-img\">\n<p class=\"dog-solution-text\">Immune System<\/p>\n<\/a>\n<\/div>",
+              "code": "<div class=\"dog-solution-container\">\n<a href=\"https:\/\/vetnaturals.com\/collections\/all-products\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/0438\/4395\/files\/dg2.png?v=1587420929\" class=\"dog-solution-img\">\n<p class=\"dog-solution-text\">Immune System<\/p>\n<\/a>\n<\/div>",
               "width": "33%"
             }
           },
           "1587421771935": {
             "type": "html",
             "settings": {
-              "code": "<div class=\"dog-solution-container\">\n<a href=\"https:\/\/vetnaturals.com\/collections\/all-products-minus-upsells-downsells\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/0438\/4395\/files\/dg3.png?v=1587420929\" class=\"dog-solution-img\">\n<p class=\"dog-solution-text\">Sleep Aids<\/p>\n<\/a>\n<\/div>",
+              "code": "<div class=\"dog-solution-container\">\n<a href=\"https:\/\/vetnaturals.com\/collections\/all-products\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/0438\/4395\/files\/dg3.png?v=1587420929\" class=\"dog-solution-img\">\n<p class=\"dog-solution-text\">Sleep Aids<\/p>\n<\/a>\n<\/div>",
               "width": "33%"
             }
           },
           "1587422005958": {
             "type": "html",
             "settings": {
-              "code": "<div class=\"dog-solution-container\">\n<a href=\"https:\/\/vetnaturals.com\/collections\/all-products-minus-upsells-downsells\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/0438\/4395\/files\/dg4.png?v=1587420929\" class=\"dog-solution-img\">\n<p class=\"dog-solution-text\">Bone &amp; Joint Issues<\/p>\n<\/a>\n<\/div>",
+              "code": "<div class=\"dog-solution-container\">\n<a href=\"https:\/\/vetnaturals.com\/collections\/all-products\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/0438\/4395\/files\/dg4.png?v=1587420929\" class=\"dog-solution-img\">\n<p class=\"dog-solution-text\">Bone &amp; Joint Issues<\/p>\n<\/a>\n<\/div>",
               "width": "33%"
             }
           },
           "1587422015766": {
             "type": "html",
             "settings": {
-              "code": "<div class=\"dog-solution-container\">\n<a href=\"https:\/\/vetnaturals.com\/collections\/all-products-minus-upsells-downsells\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/0438\/4395\/files\/dg5.png?v=1587420929\" class=\"dog-solution-img\">\n<p class=\"dog-solution-text\">Revitalizing Fur<\/p>\n<\/a>\n<\/div>",
+              "code": "<div class=\"dog-solution-container\">\n<a href=\"https:\/\/vetnaturals.com\/collections\/all-products\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/0438\/4395\/files\/dg5.png?v=1587420929\" class=\"dog-solution-img\">\n<p class=\"dog-solution-text\">Revitalizing Fur<\/p>\n<\/a>\n<\/div>",
               "width": "33%"
             }
           },
@@ -189,14 +189,14 @@
           "1587429805774": {
             "type": "html",
             "settings": {
-              "code": "<a class=\"white read-link\" href=\"https:\/\/vetnaturals.com\/collections\/all-products-minus-upsells-downsells\">\n<div class=\"row product-container\">\n<!-- Text -->\n<div class=\"white text-block-promo\">\n<h3><b>Our Products<\/b><\/h3>\n<h4>Looking for ways to elevate your senior dog’s life quality and way of enjoying it?<\/h4>\n<!-- Text END -->\n<!-- Link -->\n<span class=\"white read-link\" href=\"\/collections\/all-products\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/0438\/4395\/files\/arrow-right.png?v=1587431602\" width=\"10px\" height=\"auto\" style=\"margin-right: 5px;\">SEE PRODUCTS<\/span>\n<\/div>\n<!-- Link END -->\n<!-- Image -->\n<div class=\"image-block-promo\">\n<img class=\"product-shot\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/0438\/4395\/files\/product-img.png?v=1587435658\">\n<\/div>\n<!-- Image END -->\n<\/div>\n<\/a>",
+              "code": "<a class=\"white read-link\" href=\"\/collections\/all-products\">\n<div class=\"row product-container\">\n<!-- Text -->\n<div class=\"white text-block-promo\">\n<h3><b>Our Products<\/b><\/h3>\n<h4>Looking for ways to elevate your senior dog’s life quality and way of enjoying it?<\/h4>\n<!-- Text END -->\n<!-- Link -->\n<span class=\"white read-link\" href=\"\/collections\/all-products\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/0438\/4395\/files\/arrow-right.png?v=1587431602\" width=\"10px\" height=\"auto\" style=\"margin-right: 5px;\">SEE PRODUCTS<\/span>\n<\/div>\n<!-- Link END -->\n<!-- Image -->\n<div class=\"image-block-promo\">\n<img class=\"product-shot\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/0438\/4395\/files\/product-img.png?v=1587435658\">\n<\/div>\n<!-- Image END -->\n<\/div>\n<\/a>",
               "width": "50%"
             }
           },
           "1587438329830": {
             "type": "html",
             "settings": {
-              "code": "<div class=\"center\">\n<button class=\"button-yellow\"><a href=\"https:\/\/vetnaturals.com\/collections\/all-products-minus-upsells-downsells\">View All Vet Naturals Products<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/0438\/4395\/files\/all-button-icon.png?v=1590437865\" class=\"button-yellow-next\"><\/a><\/button>\n<\/div>",
+              "code": "<div class=\"center\">\n<button class=\"button-yellow\"><a href=\"\/collections\/all-products\">View All Vet Naturals Products<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0346\/0438\/4395\/files\/all-button-icon.png?v=1590437865\" class=\"button-yellow-next\"><\/a><\/button>\n<\/div>",
               "width": "100%"
             }
           }
@@ -220,8 +220,7 @@
           "text_size": "medium",
           "title": "",
           "text": "",
-          "button_label": "",
-          "button_link": ""
+          "button_label": ""
         }
       },
       "1587506794426": {
@@ -311,7 +310,7 @@
           "timer_ends": "May 3, 2020 18:37:25",
           "highlight": "Want it shipped today? Order within the next 1h 7m 39s",
           "features": "<div class=\"col-md-4 QS_features\">\n<i class=\"fa fa-globe\" aria-hidden=\"true\"><\/i>Free U.S. Shipping For orders Over 75$<\/div>\n<div class=\"col-md-3 QS_features\">\n<i class=\"fa fa-truck\" aria-hidden=\"true\"><\/i>Easy 30 day Exchange Policy <\/div><div class=\"col-md-3 QS_features\">\n<i class=\"fa fa-clock-o\" aria-hidden=\"true\"><\/i>7 Day a week Customer Support <\/div>",
-          "show_quantity_selector": true,
+          "show_quantity_selector": false,
           "show_variant_labels": true,
           "show_vendor": false,
           "enable_payment_button": true,
@@ -428,7 +427,7 @@
         "type": "page-home-banner",
         "settings": {
           "image": "shopify:\/\/shop_images\/hero.jpg",
-          "heading": "Developed By Vets, <span class=\"black\">Approved By Pets<\/span><span style=\"font-size: 24px; opacity:39%\">®<\/span>",
+          "heading": "<span style=\"color: #3D62A1;\">Developed by Vets <\/span><br><span class=\"black\">Approved by Pets<\/span><span style=\"font-size: 24px; opacity:39%\">®<\/span>",
           "description": "Providing your loved pet with an effective selection of high quality, natural supplements.",
           "button_label": "View All Vet Naturals Products",
           "button_link": "shopify:\/\/collections\/all-products-minus-upsells-downsells",
@@ -514,18 +513,20 @@
           "button_link": ""
         }
       },
-      "QS_Three_steps_HipJoint": {
-        "type": "QS_Three_steps_HipJoint",
+      "vet-trial": {
+        "type": "vet-trial",
         "settings": {
-          "image1": "",
-          "heading1": "Glucosamine, Chondroitin, MSM",
-          "description1": "Helps to promote healthy cartilage ligaments, tendons and synovial fluid. They stimulate cartel syntesis and delay cartilage degeneration",
-          "image2": "",
-          "heading2": "Fish Oil and Fatty Acids",
-          "description2": "High in omega fatty acids, fish oil for dogs helps reduce immflamation, increases stamina, and adds moisture to ensure a healthy skin and coat. Linolenic(Omega 3) and Linoleic(Omega 6) helps with dog arthritis, fighting inflammatory diseases.",
-          "image3": "",
-          "heading3": "Organic Turmeric",
-          "description3": "Contains a compound called curucumin, the active ingredient, which has antioxidant, anti-inflammatory, antibacterial and wound healing properties for dog health."
+          "image": "shopify:\/\/shop_images\/Group_2.jpg",
+          "heading": "Enter to win a year of free product!",
+          "description": "Thank you for your interest in Vet Naturals! We strive to create natural supplements for your beloved four-legged friend. Fill out our brief survey below to enter the trial giveaway!",
+          "button_label": "View All VetNaturals Products",
+          "image--completed": "shopify:\/\/shop_images\/Group_3.jpg",
+          "heading_complete": "Thanks for filling out our survey!",
+          "description_complete": "",
+          "list_ID": "SKZn8X",
+          "survey_complete_cta": "While you wait, save 30%!",
+          "survey_consent_alert": "The trial is only made available to subscribers.",
+          "survey_whitelist": "<p>Be sure to add our email address service@vetnaturals.com to your address book so you don&#x27;t miss an update! For gmail users, just drag the email from the promo tab to the inbox tab.<\/p>"
         }
       }
     },
