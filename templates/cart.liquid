@@ -6,7 +6,9 @@
 {% endcomment %}
 
 {% section 'cart-template' %}
+<div {% if cart.item_count == 0 %}class="hide" {% endif %}custom-content-wrapper>
 {% section 'custom-content-cart' %}
+</div>
 
 
 
