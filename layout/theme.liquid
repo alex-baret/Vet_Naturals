@@ -135,7 +135,7 @@
 
 {% comment %}======= Hiding Header from cart pagewith conditional {% endcomment %}
 
-  {% unless template.suffix contains "cart" %}
+  {% unless template.name contains "cart" %}
           {% section 'header' %}
      {% endunless %}
 
@@ -150,7 +150,7 @@
 
 {% comment %}======= Hiding Footer from cart pagewith conditional {% endcomment %}
 
-{% unless template.suffix contains "cart" %}
+{% unless template.name contains "cart" %}
 {% section 'footer' %}
 {% endunless %}
 
