@@ -2,7 +2,7 @@
 {% comment %}{% endcomment %}
   <div {% if cart.item_count == 0 %}class="hide" {% endif %}data-cart-wrapper>
     <div class="cart-header">
-      <img height="50px" width="auto" class="cart-logo-image" src="https://cdn.shopify.com/s/files/1/0346/0438/4395/files/vet-logo.png?v=1586982399">
+      {% comment %}<img height="50px" width="auto" class="cart-logo-image" src="https://cdn.shopify.com/s/files/1/0346/0438/4395/files/vet-logo.png?v=1586982399">{% endcomment %}
       <h1 class="cart-header__title">{{ 'cart.general.title' | t }}</h1>
       <a href="{{ routes.all_products_collection_url }}" class="text-link text-link--accent">
         {{ 'cart.general.continue_shopping' | t }}
@@ -307,7 +307,7 @@
           </div>
         </div>
       </div>
-      <img class="trust-badges" height="100px" width="auto" src="https://cdn.shopify.com/s/files/1/0346/0438/4395/files/trust_badges.png?v=1608047052">
+     {% comment %} <img class="trust-badges" height="100px" width="auto" src="https://cdn.shopify.com/s/files/1/0346/0438/4395/files/trust_badges.png?v=1608047052"> {% endcomment %}
     </form>
    
     <p class="visually-hidden" data-cart-status
