@@ -8,7 +8,7 @@ on:
 jobs:
   deploy:
     name: Deploy Production Theme
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     steps:
       # basically git clone
       - uses: actions/checkout@v2
