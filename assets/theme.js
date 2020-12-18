@@ -4122,7 +4122,7 @@ theme.Survey = (function() {
 
   KlaviyoSubscribe.attachToForms("#survey__form", {
     extra_properties: {
-      $source: 'Samples Form',
+      $source: '$embed',
       $method_type: "Klaviyo Form",
       $method_id: 'embed'
     },

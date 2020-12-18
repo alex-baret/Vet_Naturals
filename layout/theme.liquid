@@ -132,7 +132,15 @@
     {% include 'cart-popup' %}
   {%- endif -%}
 
-  {% section 'header' %}
+
+{% comment %}======= Hiding Header from cart pagewith conditional {% endcomment %}
+
+  {% unless template.name contains "cart" %}
+          {% section 'header' %}
+     {% endunless %}
+
+{% comment %}=================================================== {% endcomment %}
+
 
   <div class="page-container drawer-page-content" id="PageContainer">
 
@@ -140,7 +148,14 @@
       {{ content_for_layout }}
     </main>
 
-    {% section 'footer' %}
+{% comment %}======= Hiding Footer from cart pagewith conditional {% endcomment %}
+
+{% unless template.name contains "cart" %}
+{% section 'footer' %}
+{% endunless %}
+
+{% comment %}=================================================== {% endcomment %}
+
 
     <div id="slideshow-info" class="visually-hidden" aria-hidden="true">
       {{- 'sections.slideshow.navigation_instructions' | t -}}
